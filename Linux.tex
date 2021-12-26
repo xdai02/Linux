@@ -19,6 +19,7 @@
 \usetikzlibrary{calc,shapes.multipart,chains,arrows}
 
 \setstretch{1.5}
+\setlength{\parindent}{0cm}
 
 \geometry{a4paper,top=2.5cm,bottom=2.5cm}
 
@@ -633,25 +634,25 @@ ls [OPTION]... [FILE]...
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}           & \textbf{描述}                                                              \\
+            \textbf{参数} & \textbf{描述}                                                              \\
             \hline
-            \lstinline|-a|  & 表示all，列出目录下的所有文件，包括隐藏文件                                \\
+            -a            & 表示all，列出目录下的所有文件，包括隐藏文件                                \\
             \hline
-            \lstinline|-c|  & 表示按照最后更改时间排序，可以使用\lstinline|-l|显示出时间         \\
+            -c            & 表示按照最后更改时间排序，可以使用\lstinline|-l|显示出时间         \\
             \hline
-            \lstinline|-g|  & 对输出的文件不进行排序                                                     \\
+            -g            & 对输出的文件不进行排序                                                     \\
             \hline
-            \lstinline|-i|  & 表示inode，打印出每个文件的inode号                                         \\
+            -i            & 表示inode，打印出每个文件的inode号                                         \\
             \hline
-            \lstinline|-l|  & 将文件权限、所有者、文件大小等信息详细列出，可简写为\lstinline|ll| \\
+            -l            & 将文件权限、所有者、文件大小等信息详细列出，可简写为\lstinline|ll| \\
             \hline
-            \lstinline|-r| & 表示reverse，按照当前排序顺序相反的顺序排列                                \\
+            -r            & 表示reverse，按照当前排序顺序相反的顺序排列                                \\
             \hline
-            \lstinline|-R| & 表示recursive，递归列出所有子目录层                                        \\
+            -R            & 表示recursive，递归列出所有子目录层                                        \\
             \hline
-            \lstinline|-s| & 表示size，以块大小为单位列出所有文件的大小                                 \\
+            -s            & 表示size，以块大小为单位列出所有文件的大小                                 \\
             \hline
-            \lstinline|-S| & 根据文件大小排序                                                           \\
+            -S            & 根据文件大小排序                                                           \\
             \hline
         \end{tabular}
     }
@@ -703,9 +704,9 @@ mkdir [-p] dir
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}           & \textbf{描述}                      \\
+            \textbf{参数} & \textbf{描述}                      \\
             \hline
-            \lstinline|-p| & 确保目录名称存在，不存在的就建一个 \\
+            -p            & 确保目录名称存在，不存在的就建一个 \\
             \hline
         \end{tabular}
     }
@@ -730,15 +731,15 @@ rm [OPTION]... [FILE]...
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}                                     & \textbf{描述}                               \\
+            \textbf{参数} & \textbf{描述}                               \\
             \hline
-            \lstinline|-f|                           & 表示force，忽略不存在的文件和参数，强制删除 \\
+            -f            & 表示force，忽略不存在的文件和参数，强制删除 \\
             \hline
-            \lstinline|-i|                           & 进行任何删除操作前必须先确认                \\
+            -i            & 进行任何删除操作前必须先确认                \\
             \hline
-            \lstinline|-r| / \lstinline|-R| & 表示recursive，递归删除该目录下的所有目录层 \\
+            -r / -R       & 表示recursive，递归删除该目录下的所有目录层 \\
             \hline
-            \lstinline|-d|                           & 表示dir，删除可能包含有数据的目录           \\
+            -d            & 表示dir，删除可能包含有数据的目录           \\
             \hline
         \end{tabular}
     }
@@ -764,19 +765,19 @@ cp [OPTION]... SOURCE... DIRECTORY
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}           & \textbf{描述}                                                \\
+            \textbf{参数} & \textbf{描述}                                                \\
             \hline
-            \lstinline|-f| & 覆盖已经存在的目标文件而不给出提示                           \\
+            -f            & 覆盖已经存在的目标文件而不给出提示                           \\
             \hline
-            \lstinline|-i| & 在覆盖目标文件之前给出提示                                   \\
+            -i            & 在覆盖目标文件之前给出提示                                   \\
             \hline
-            \lstinline|-r| & 递归复制该目录下所有子目录和文件                             \\
+            -r            & 递归复制该目录下所有子目录和文件                             \\
             \hline
-            \lstinline|-p| & 除复制文件的内容外，还将修改时间和访问权限一起复制到新文件中 \\
+            -p            & 除复制文件的内容外，还将修改时间和访问权限一起复制到新文件中 \\
             \hline
-            \lstinline|-d| & 复制时保留链接，链接相当于Windows下的快捷方式                \\
+            -d            & 复制时保留链接，链接相当于Windows下的快捷方式                \\
             \hline
-            \lstinline|-a| & 作用等同于\lstinline|-dpr|参数组合                    \\
+            -a            & 作用等同于-dpr参数组合                                       \\
             \hline
         \end{tabular}
     }
@@ -802,19 +803,19 @@ mv [OPTION]... SOURCE... DIRECTORY
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}           & \textbf{描述}                                          \\
+            \textbf{参数} & \textbf{描述}                                          \\
             \hline
-            \lstinline|-b| & 若有文件覆盖时，则覆盖前先行备份                       \\
+            -b            & 若有文件覆盖时，则覆盖前先行备份                       \\
             \hline
-            \lstinline|-f| & 表示force，若目标文件已经存在，则不会询问强制覆盖      \\
+            -f            & 表示force，若目标文件已经存在，则不会询问强制覆盖      \\
             \hline
-            \lstinline|-i| & 表示interactive，若目标文件已经存在，询问是否覆盖      \\
+            -i            & 表示interactive，若目标文件已经存在，询问是否覆盖      \\
             \hline
-            \lstinline|-n| & 表示no-clobber，不会覆盖已经存在的文件                 \\
+            -n            & 表示no-clobber，不会覆盖已经存在的文件                 \\
             \hline
-            \lstinline|-d| & 复制时保留链接，链接相当于Windows下的快捷方式          \\
+            -d            & 复制时保留链接，链接相当于Windows下的快捷方式          \\
             \hline
-            \lstinline|-u| & 表示update，当源文件比目标文件新或目标文件不存在时移动 \\
+            -u            & 表示update，当源文件比目标文件新或目标文件不存在时移动 \\
             \hline
         \end{tabular}
     }
@@ -921,19 +922,19 @@ file [-bcLvz][-f <filename>][-m <magicfile>...][dir...]
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}           & \textbf{描述}                                                                   \\
+            \textbf{参数} & \textbf{描述}                                                                   \\
             \hline
-            \lstinline|-b| & 表示brief，显示查看结果时，不显示文件名                                         \\
+            -b            & 表示brief，显示查看结果时，不显示文件名                                         \\
             \hline
-            \lstinline|-c| & 表示checking-printout，显示指令执行过程                                         \\
+            -c            & 表示checking-printout，显示指令执行过程                                         \\
             \hline
-            \lstinline|-f| & 表示files-from FILE，列出文件中文件名的文件类型                                 \\
+            -f            & 表示files-from FILE，列出文件中文件名的文件类型                                 \\
             \hline
-            \lstinline|-F| & 表示separator STRING，使用指定符号替换输出文件名后默认的\lstinline|:| \\
+            -F            & 表示separator STRING，使用指定符号替换输出文件名后默认的\lstinline|:| \\
             \hline
-            \lstinline|-L| & 表示dereference，查看对应软链接文件的文件类型                                   \\
+            -L            & 表示dereference，查看对应软链接文件的文件类型                                   \\
             \hline
-            \lstinline|-z| & 表示uncompress，尝试去解读压缩文件的内容                                        \\
+            -z            & 表示uncompress，尝试去解读压缩文件的内容                                        \\
             \hline
         \end{tabular}
     }
@@ -954,15 +955,15 @@ cat [OPTION]... [FILE]...
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}           & \textbf{描述}                                     \\
+            \textbf{参数} & \textbf{描述}                                     \\
             \hline
-            \lstinline|-A| & 表示show-all，展示所有内容                        \\
+            -A            & 表示show-all，展示所有内容                        \\
             \hline
-            \lstinline|-b| & 表示number-nonblank，对查看的内容的非空行进行编号 \\
+            -b            & 表示number-nonblank，对查看的内容的非空行进行编号 \\
             \hline
-            \lstinline|-n| & 表示number，对查看的内容行数编号输出              \\
+            -n            & 表示number，对查看的内容行数编号输出              \\
             \hline
-            \lstinline|-s| & 表示seueeze-blank，将多行连续的空行压缩为一行     \\
+            -s            & 表示seueeze-blank，将多行连续的空行压缩为一行     \\
             \hline
         \end{tabular}
     }
@@ -983,17 +984,17 @@ more [options] <file>...
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}           & \textbf{描述}                                                             \\
+            \textbf{参数} & \textbf{描述}                                                             \\
             \hline
-            \lstinline|+n| & 从第n行开始显示                                                           \\
+            +n            & 从第n行开始显示                                                           \\
             \hline
-            \lstinline|-n| & 一次显示的行数                                                            \\
+            -n            & 一次显示的行数                                                            \\
             \hline
-            \lstinline|-c| & 从顶部清屏并显示                                                          \\
+            -c            & 从顶部清屏并显示                                                          \\
             \hline
-            \lstinline|-p| & 通过清除窗口而不是滚屏来对文件进行换页，与\lstinline|-c|选项相似 \\
+            -p            & 通过清除窗口而不是滚屏来对文件进行换页，与\lstinline|-c|选项相似 \\
             \hline
-            \lstinline|-s| & 把连续的多个空行显示为一行                                                \\
+            -s            & 把连续的多个空行显示为一行                                                \\
             \hline
         \end{tabular}
     }
@@ -1019,27 +1020,27 @@ tar -xzvf filename.tar.gz
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}           & \textbf{描述}              \\
+            \textbf{参数} & \textbf{描述}              \\
             \hline
-            \lstinline|-c| & 新建立压缩档案             \\
+            -c            & 新建立压缩档案             \\
             \hline
-            \lstinline|-x| & 解压缩                     \\
+            -x            & 解压缩                     \\
             \hline
-            \lstinline|-t| & 查看内容                   \\
+            -t            & 查看内容                   \\
             \hline
-            \lstinline|-u| & 更新原压缩包的内容         \\
+            -u            & 更新原压缩包的内容         \\
             \hline
-            \lstinline|-z| & gzip属性                   \\
+            -z            & gzip属性                   \\
             \hline
-            \lstinline|-j| & bz2属性                    \\
+            -j            & bz2属性                    \\
             \hline
-            \lstinline|-Z| & compress属性               \\
+            -Z            & compress属性               \\
             \hline
-            \lstinline|-v| & 显示所有过程               \\
+            -v            & 显示所有过程               \\
             \hline
-            \lstinline|-O| & 将文件解压缩成标准输出形式 \\
+            -O            & 将文件解压缩成标准输出形式 \\
             \hline
-            \lstinline|-f| & 档案名称，此参数在最后出现 \\
+            -f            & 档案名称，此参数在最后出现 \\
             \hline
         \end{tabular}
     }
@@ -1061,21 +1062,21 @@ unzip filename.zip
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{参数}           & \textbf{描述}                                    \\
+            \textbf{参数} & \textbf{描述}                                    \\
             \hline
-            \lstinline|-d| & 从压缩文件内删除指定的文件                       \\
+            -d            & 从压缩文件内删除指定的文件                       \\
             \hline
-            \lstinline|-f| & 更新现有的文件                                   \\
+            -f            & 更新现有的文件                                   \\
             \hline
-            \lstinline|-F| & 尝试修复已损坏的压缩文件                         \\
+            -F            & 尝试修复已损坏的压缩文件                         \\
             \hline
-            \lstinline|-m| & 将文件压缩并删除原始文件，即把文件移到压缩文件中 \\
+            -m            & 将文件压缩并删除原始文件，即把文件移到压缩文件中 \\
             \hline
-            \lstinline|-q| & 不显示指令执行过程                               \\
+            -q            & 不显示指令执行过程                               \\
             \hline
-            \lstinline|-r| & 递归处理，将指定目录下的所有文件和子目录一并处理 \\
+            -r            & 递归处理，将指定目录下的所有文件和子目录一并处理 \\
             \hline
-            \lstinline|-v| & 显示指令执行过程或显示版本信息                   \\
+            -v            & 显示指令执行过程或显示版本信息                   \\
             \hline
         \end{tabular}
     }
@@ -1102,27 +1103,27 @@ nano <filename>
     \setlength{\tabcolsep}{5mm}{
         \begin{tabular}{|c|l|}
             \hline
-            \textbf{命令} & \textbf{描述}                                    \\
+            \textbf{命令} & \textbf{描述}                          \\
             \hline
-            CTRL + G & 显示nano编辑器的帮助窗口 \\
+            CTRL + G      & 显示nano编辑器的帮助窗口               \\
             \hline
-            CTRL + C & 显示光标在文件中的位置信息 \\
+            CTRL + C      & 显示光标在文件中的位置信息             \\
             \hline
-            CTRL + K & 剪切文本行，并将其保存在剪切缓冲区 \\
+            CTRL + K      & 剪切文本行，并将其保存在剪切缓冲区     \\
             \hline
-            CTRL + O & 将当前文本编辑器缓冲区的内容写入文件 \\
+            CTRL + O      & 将当前文本编辑器缓冲区的内容写入文件   \\
             \hline
-            CTRL + U & 将剪切缓冲区中的内容放入当前行 \\
+            CTRL + U      & 将剪切缓冲区中的内容放入当前行         \\
             \hline
-            CTRL + Y & 翻动到文本编辑缓冲区的上一页内容 \\
+            CTRL + Y      & 翻动到文本编辑缓冲区的上一页内容       \\
             \hline
-            CTRL + V & 翻动到文本编辑缓冲区的下一页内容 \\
+            CTRL + V      & 翻动到文本编辑缓冲区的下一页内容       \\
             \hline
-            CTRL + W & 在文本编辑缓冲区中搜索单词或短语 \\
+            CTRL + W      & 在文本编辑缓冲区中搜索单词或短语       \\
             \hline
-            CTRL + X & 关闭当前文本编辑缓冲区，退出nano编辑器 \\
+            CTRL + X      & 关闭当前文本编辑缓冲区，退出nano编辑器 \\
             \hline
-            CTRL + T & 启动可用的拼写检查器 \\
+            CTRL + T      & 启动可用的拼写检查器                   \\
             \hline
         \end{tabular}
     }
@@ -1143,12 +1144,524 @@ Vim编辑器有三种模式：
 
 \begin{enumerate}
     \item 命令模式：刚进入时默认为命令模式，可以查看和查找文件内容，不能修改内容。
-    
+
     \item 插入模式：在普通模式下按下【i】、【a】、【o】键可以进入插入模式，此时编辑器处于编辑状态，能对当前的文件内容修改。在插入模式下按【ESC】键可以回到命令模式。
 
     \item 底线命令模式：在命令模式下输入【:】可以进入底线命令模式，此时可以对编辑后的文件进行保存、退出等操作。在底线命令模式下按【ESC】键可以回到命令模式。
 \end{enumerate}
 
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        \draw[rounded corners] (0,0) rectangle (3,1);
+        \draw[rounded corners] (-3,-3) rectangle (0, -2);
+        \draw[rounded corners] (3,-3) rectangle (6, -2);
 
+        \node at(1.5, 0.5) {命令模式};
+        \node at(-1.5, -2.5) {输入模式};
+        \node at(4.5, -2.5) {底线命令模式};
+
+        \draw[->,very thick] (-3, 3) node[right]{进入} -- (0, 1) node[left]{vim filename};
+        \draw[->,very thick] (3,1) node[right]{输入【:wq】} -- (6,3) node[above]{退出};
+        \draw[->,very thick] (0.5, 0) -- (-2.5, -2);
+        \node at(-2,-0.5) {输入【i/a/o】};
+        \draw[->,very thick] (-2, -2) -- (1,0);
+        \node at(0,-1.5) {ESC键};
+        \draw[->,very thick] (2, 0) -- (4,-2);
+        \node at(2,-1) {输入【:】};
+        \draw[->,very thick] (4.5, -2) -- (2.5,0);
+        \node at(6,-1.5) {命令以回车结束};
+    \end{tikzpicture}
+    \caption{Vim/Vi工作模式}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{命令}       & \textbf{描述}      \\
+            \hline
+            ↑ / k               & 光标往上移动一格   \\
+            \hline
+            ↓ / j               & 光标往下移动一格   \\
+            \hline
+            ← / h               & 光标往左移动一格   \\
+            \hline
+            → / l               & 光标往右移动一格   \\
+            \hline
+            PageUp / CTRL + B   & 光标往上翻动一屏   \\
+            \hline
+            PageDown / CTRL + F & 光标标往下翻动一屏 \\
+            \hline
+            gg                  & 光标移动到第一行   \\
+            \hline
+            G                   & 光标移动到最后一行 \\
+            \hline
+            nG                  & 光标移动到第n行    \\
+            \hline
+        \end{tabular}
+    }
+    \caption{光标移动键}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{命令} & \textbf{描述}                                       \\
+            \hline
+            q             & 退出，若有修改内容，则会提示：E37：已修改但尚未保存 \\
+            \hline
+            q!            & 表示强制退出，不会保存修改的内容                    \\
+            \hline
+            w             & 保存修改内容                                        \\
+            \hline
+            wq            & 保存并退出                                          \\
+            \hline
+            wq!           & 强制保存退出                                        \\
+            \hline
+        \end{tabular}
+    }
+    \caption{底线命令模式}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{命令} & \textbf{描述}                        \\
+            \hline
+            x             & 删除当前光标所在位置的字符           \\
+            \hline
+            dd            & 删除当前光标所在行                   \\
+            \hline
+            dw            & 删除当前光标所在位置的单词           \\
+            \hline
+            d\$           & 删除当前光标所在位置至行尾的内容     \\
+            \hline
+            J             & 删除当前光标所在行行尾的换行符       \\
+            \hline
+            u             & 撤销前一编辑命令                     \\
+            \hline
+            a             & 在当前光标后追加内容，切换到插入模式 \\
+            \hline
+            A             & 在当前光标所在行行尾追加数据         \\
+            \hline
+            r char        & 用char替换当前光标所在位置的单个字符 \\
+            \hline
+            R text        & 用text覆盖当前光标所在位置的数据     \\
+            \hline
+        \end{tabular}
+    }
+    \caption{命令模式}
+\end{table}
+
+\newpage
+
+\chapter{进程和磁盘管理}
+
+\section{进程}
+
+\subsection{进程（Process）}
+
+进程指的是一个具有一定独立功能的程序关于某个数据集合的一次运行活动。进程是系统进行资源分配和调度运行的基本单位。 \\
+
+进程实体中包含三个组成部分：
+
+\begin{enumerate}
+    \item 程序
+    \item 数据
+    \item PCB (Process Control Block)
+\end{enumerate}
+
+程序（program）与进程是有区别的，程序是静态的，进程是动态的。当程序的可执行文件被装入内存后就会变成进程。进程可以认为是执行中的程序，进程需要一定资源（如CPU时间、内存、文件、I/O设备）完成任务。这些资源可以在创建的时候或者运行中分配。一个程序可以通过GUI (Graphic User Interface)图形用户界面的鼠标点击、CLI (Command-line Interface)命令行界面输入程序名等方式运行。 \\
+
+Linux中进程的状态有五种：
+
+\begin{enumerate}
+    \item 运行：正在运行或在运行队列中等待
+
+    \item 中断：休眠中、受阻或在等待某个条件的形成或接受到信号
+
+    \item 不可中断：收到信号不唤醒和不可运行, 进程必须等待直到有中断发生
+
+    \item 僵死：进程已终止, 但进程描述符存在, 直到父进程调用\lstinline|wait4()|系统调用后释放
+
+    \item 进程收到SIGSTOP、SIGSTP、SIGTIN、SIGTOU信号后停止运行
+\end{enumerate}
+
+\subsection{查看进程}
+
+在启动一个进程之后，使用\lstinline|ps|命令可以查看启动软件的进程。
+
+\vspace{-0.5cm}
+\begin{lstlisting}
+ps [options]
+\end{lstlisting}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                \\
+            \hline
+            -A            & 显示所有进程                 \\
+            \hline
+            -w            & 显示加宽可以显示较多的信息   \\
+            \hline
+            -au           & 显示较详细的信息             \\
+            \hline
+            -aux          & 显示所有包含其他使用者的行程 \\
+            \hline
+            -ef           & 查看全格式的全部进程         \\
+            \hline
+        \end{tabular}
+    }
+    \caption{\lstinline|ps|参数说明}
+\end{table}
+
+\lstinline|ps|命令只能查看输入命令那一刻获取到的进程信息，而\lstinline|top|命令可以实时监测进程信息。
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{标识} & \textbf{描述}                                \\
+            \hline
+            PID           & 进程ID                                       \\
+            \hline
+            USER          & 进程属主名称                                 \\
+            \hline
+            PR            & 进程优先级                                   \\
+            \hline
+            NI            & 进程谦让度值                                 \\
+            \hline
+            VIRT          & 进程占用的虚拟内存总量                       \\
+            \hline
+            RES           & 进程占用的物理内存总量                       \\
+            \hline
+            SHR           & 进程和其它进程共享的内存总量                 \\
+            \hline
+            S             & 进程状态                                     \\
+            \hline
+            \%CPU         & 进程使用的CPU时间比例                        \\
+            \hline
+            \%MEM         & 进程使用的内存占可用内存的比例               \\
+            \hline
+            TIME+         & 自进程启动到目前为止CPU时间总数              \\
+            \hline
+            COMMAND       & 进程所对应的命令行名称，即程序启动时的程序名 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{\lstinline|top|标识符}
+\end{table}
+
+\newpage
+
+\section{结束进程}
+
+\subsection{kill}
+
+\lstinline|kill|命令用于删除执行中的进程。
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                              \\
+            \hline
+            -l [sigspec]  & 1 (HUP)：重新加载、9 (KILL)：杀死进程、15 (TERM)：正常停止 \\
+            \hline
+            -s sigspec    & 指定要送出的信息                                           \\
+            \hline
+        \end{tabular}
+    }
+    \caption{\lstinline|kill|参数说明}
+\end{table}
+
+\lstinline|killall|命令与\lstinline|kill|不同的是它会杀死指定名字的所有进程，\lstinline|kill|命令用于杀死指定进程PID，需要配合\lstinline|ps|使用，而\lstinline|killall|直接对进程的名字进行操作，更加方便。
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|l|l|}
+            \hline
+            \textbf{参数}        & \textbf{描述}                      \\
+            \hline
+            -e / --exact         & 进程需要和名字完成相符             \\
+            \hline
+            -I / --ignore-case   & 忽略大小写                         \\
+            \hline
+            -g / --process-group & 结束进程组                         \\
+            \hline
+            -i / --interactive   & 结束之前询问                       \\
+            \hline
+            -l / --list          & 列出所有的信号名称                 \\
+            \hline
+            -q / --quite         & 进程没有结束时，不输出任何信息     \\
+            \hline
+            -r / --regexp        & 将进程名模式解释为扩展的正则表达式 \\
+            \hline
+            -s / --signal        & 发送指定信号                       \\
+            \hline
+            -u / --user          & 结束指定用户的进程                 \\
+            \hline
+            -v / --verbose       & 显示详细执行过程                   \\
+            \hline
+            -w / --wait          & 等待所有的进程都结束               \\
+            \hline
+            --help               & 显示帮助信息                       \\
+            \hline
+        \end{tabular}
+    }
+    \caption{\lstinline|killall|参数说明}
+\end{table}
+
+\newpage
+
+\section{磁盘空间}
+
+\subsection{df}
+
+\lstinline|df|命令用于查看磁盘空间使用情况。
+
+\vspace{-0.5cm}
+\begin{lstlisting}
+df [OPTION]... [FILE]...
+\end{lstlisting}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                     \\
+            \hline
+            -a            & 表示all，显示所有的文件系统，包括虚拟文件系统     \\
+            \hline
+            -h            & 表示human-readable，以易读的格式显示              \\
+            \hline
+            -H            & 和-h参数一样，但是是以1k = 1000为单位             \\
+            \hline
+            -i            & 表示inodes，不用硬盘容量，而是以inode的数量来显示 \\
+            \hline
+            -k            & 以kb的容量显示各文件系统，相当于--block-size=1k   \\
+            \hline
+            -l            & 表示local，只显示本地文件系统                     \\
+            \hline
+            -t            & 只显示指定类型的文件系统                          \\
+            \hline
+            -T            & 显示文件系统类型                                  \\
+            \hline
+            -x            & 不显示指定类型的文件系统                          \\
+            \hline
+        \end{tabular}
+    }
+    \caption{\lstinline|df|参数说明}
+\end{table}
+
+\subsection{du}
+
+\lstinline|du|命令用于显示文件或目录所占用的磁盘空间。
+
+\vspace{-0.5cm}
+\begin{lstlisting}
+du [OPTION]... [FILE]...
+\end{lstlisting}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                               \\
+            \hline
+            -a            & 表示all，列出所有文件和目录容量大小                         \\
+            \hline
+            -b            & 表示bytes，以字节为单位列出文件和目录的容量大小             \\
+            \hline
+            -c            & 表示total，除了列出文件和目录的容量大小外，列出总的容量大小 \\
+            \hline
+            -h            & 表示human-readable，以易读的格式显示                        \\
+            \hline
+            -k            & 以KB为单位                                                  \\
+            \hline
+            -m            & 以MB为单位                                                  \\
+            \hline
+            -s            & 仅列出总量，而不列出每个目录和文件的大小                    \\
+            \hline
+            -S            & 和-s参数类似，但是统计时不包含子目录的容量大小              \\
+            \hline
+        \end{tabular}
+    }
+    \caption{\lstinline|du|参数说明}
+\end{table}
+
+\newpage
+
+\chapter{权限管理}
+
+\section{用户权限}
+
+\subsection{用户类型}
+
+Linux系统是一个多用户多任务的操作系统，一般可将用户分为root用户和普通用户两大类。root是系统管理员用户，在命令行前面显示【\#】，普通用户在命令行前面显示【\$】。 \\
+
+Linux系统中/etc/passwd文件保存了系统中所有用户的主要信息，这些信息以【:】分隔。
+
+\vspace{-0.5cm}
+\begin{lstlisting}
+cat /etc/passwd
+\end{lstlisting}
+
+文件中每行代表一个用户，这些用户中的绝大多数是系统或服务正常运行所必需的用户，这种用户称为系统用户或伪用户。系统用户是不能登录系统的，但是这些用户同样也不能删除，因为一旦删除，依赖这些用户运行的服务或程序就不能正常执行，会导致系统问题。 \\
+
+Linux系统中/etc/shadow文件保存了每个用户的信息，该文件只有root用户才能访问。
+
+\vspace{-0.5cm}
+\begin{lstlisting}
+cat /etc/shadow
+\end{lstlisting}
+
+\subsection{添加用户}
+
+使用root登录Linux之后就可以使用\lstinline|useradd|命令添加普通用户，并通过`\lstinline|passwd|命令可以设置用户密码。
+
+\vspace{-0.5cm}
+\begin{lstlisting}
+useradd [username]
+passwd [username]
+\end{lstlisting}
+
+\subsection{修改用户}
+
+使用\lstinline|usermod|命令可以修改用户信息。
+
+\vspace{-0.5cm}
+\begin{lstlisting}
+usermod -l [new_username] [old_username]
+\end{lstlisting}
+
+\subsection{删除用户}
+
+使用root登录Linux之后就可以使用\lstinline|userdel|命令删除普通用户。
+
+\vspace{-0.5cm}
+\begin{lstlisting}
+userdel -rf [username]
+\end{lstlisting}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                   \\
+            \hline
+            -f            & 表示force，强制删除用户         \\
+            \hline
+            -r            & 表示remove，删除主目录和邮件池  \\
+            \hline
+            -Z            & 为用户删除所有的SELinux用户映射 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{\lstinline|userdel|参数说明}
+\end{table}
+
+\newpage
+
+\section{文件权限}
+
+\subsubsection{文件权限}
+
+有时候某些文件为了安全起见，只有只读权限，没有写入权限和执行权限，而这些权限一般和用户或用户组有关。通过\lstinline|ls -l|命令可以查看文件权限相关信息。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{img/C5/5-2/1.png}
+\end{figure}
+
+\begin{itemize}
+    \item 第一列表示文件读取、写入、执行相关的权限
+
+    \item 第二列表示文件或目录的创建者/所有者
+
+    \item 第三列表示文件或目录所在的用户组
+\end{itemize}
+
+文件权限可分为三部分，第一部分表示文件创建者/所有者对该文件所具有的权限，第二部分表示创建者/所有者所在的组其他用户的权限，第三部分表示其他组的用户的权限。 \\
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{权限} & \textbf{描述}         \\
+            \hline
+            r             & 表示read，读取权限    \\
+            \hline
+            w             & 表示write，写入权限   \\
+            \hline
+            x             & 表示execute，执行权限 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{文件权限}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.7]{img/C5/5-2/2.png}
+\end{figure}
+
+\subsection{chmod}
+
+\lstinline|chmod|命令可以控制用户对文件的权限的命令。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{img/C5/5-2/3.png}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}            \\
+            \hline
+            u             & user用户                 \\
+            \hline
+            g             & group用户组              \\
+            \hline
+            o             & others其他用户           \\
+            \hline
+            a             & all全部                  \\
+            \hline
+            +             & 在现有权限基础上增加权限 \\
+            \hline
+            -             & 在现有权限基础上移出权限 \\
+            \hline
+            =             & 设置权限                 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{\lstinline|chmod|参数说明}
+\end{table}
+
+\lstinline|chmod|命令也可以使用八进制数来指定权限。文件或目录的权限位是由9个权限位来控制，每三位为一组。
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.8]{img/C5/5-2/4.png}
+\end{figure}
 
 \end{document}
