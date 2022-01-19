@@ -13,9 +13,7 @@
 \usepackage[hidelinks]{hyperref}
 \usepackage[a4paper]{geometry}
 \usepackage{url}
-% \usepackage{minted}
 
-\usetikzlibrary{calc}
 \usetikzlibrary{calc,shapes.multipart,chains,arrows}
 
 \setstretch{1.5}
@@ -525,11 +523,12 @@ DNS2=8.8.8.8
 
 重启CentOS即可完成配置：
 
+\vspace{-0.5cm}
 \begin{lstlisting}
 reboot
 \end{lstlisting}
 
-重启后可通过\lstinline|ping|命令检查网络是否畅通：
+重启后可通过ping命令检查网络是否畅通：
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -623,7 +622,7 @@ ls
 
 \subsection{ls (list)}
 
-\lstinline|ls|命令列出当前所在目录中所有文件和目录的列表，并且使用不同的命令参数可以筛选和限制展示出来的列表。
+ls命令列出当前所在目录中所有文件和目录的列表，并且使用不同的命令参数可以筛选和限制展示出来的列表。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -639,13 +638,13 @@ ls [OPTION]... [FILE]...
 			\hline
 			-a            & 表示all，列出目录下的所有文件，包括隐藏文件                                \\
 			\hline
-			-c            & 表示按照最后更改时间排序，可以使用\lstinline|-l|显示出时间         \\
+			-c            & 表示按照最后更改时间排序，可以使用-l显示出时间         \\
 			\hline
 			-g            & 对输出的文件不进行排序                                                     \\
 			\hline
 			-i            & 表示inode，打印出每个文件的inode号                                         \\
 			\hline
-			-l            & 将文件权限、所有者、文件大小等信息详细列出，可简写为\lstinline|ll| \\
+			-l            & 将文件权限、所有者、文件大小等信息详细列出，可简写为ll \\
 			\hline
 			-r            & 表示reverse，按照当前排序顺序相反的顺序排列                                \\
 			\hline
@@ -657,7 +656,7 @@ ls [OPTION]... [FILE]...
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|ls|参数说明}
+	\caption{ls参数说明}
 \end{table}
 
 \newpage
@@ -666,7 +665,7 @@ ls [OPTION]... [FILE]...
 
 \subsection{cd (change directory)}
 
-在对Linux目录操作过程中，可以使用\lstinline|pwd| (print working directory)命令查看当前所处目录的绝对路径，\lstinline|cd|命令可以切换到不同的路径。
+在对Linux目录操作过程中，可以使用pwd (print working directory)命令查看当前所处目录的绝对路径，cd命令可以切换到不同的路径。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -674,7 +673,7 @@ pwd
 cd [dir]
 \end{lstlisting}
 
-其中dir可以为绝对路径或相对路径。若目录名称省略，则变换至使用者的home目录。另外，\lstinline|~|也表示为home目录，\lstinline|.|表示目前所在的目录，\lstinline|..|表示目前目录位置的上一层目录。 \\
+其中dir可以为绝对路径或相对路径。若目录名称省略，则变换至使用者的home目录。另外，【~】也表示为home目录，【.】表示目前所在的目录，【..】表示目前目录位置的上一层目录。 \\
 
 若每一个目录名称一个个敲出来就会显得有些繁琐，这个时候就可以使用Tab键进行自动补全。
 
@@ -684,7 +683,7 @@ cd [dir]
 
 \subsection{touch}
 
-\lstinline|touch|命令用于修改文件或者目录的时间属性，包括存取时间和更改时间。若文件不存在，系统会建立一个新的文件。
+touch命令用于修改文件或者目录的时间属性，包括存取时间和更改时间。若文件不存在，系统会建立一个新的文件。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -693,7 +692,7 @@ touch [OPTION]... FILE...
 
 \subsection{mkdir (make directory)}
 
-\lstinline|mkdir|命令用于创建目录。
+mkdir命令用于创建目录。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -711,7 +710,7 @@ mkdir [-p] dir
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|mkdir|参数说明}
+	\caption{mkdir参数说明}
 \end{table}
 
 \newpage
@@ -720,7 +719,7 @@ mkdir [-p] dir
 
 \subsection{rm (remove)}
 
-\lstinline|rm|命令用于删除一个文件或者目录。
+rm命令用于删除一个文件或者目录。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -744,7 +743,7 @@ rm [OPTION]... [FILE]...
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|rm|参数说明}
+	\caption{rm参数说明}
 \end{table}
 
 \newpage
@@ -753,7 +752,7 @@ rm [OPTION]... [FILE]...
 
 \subsection{cp (copy)}
 
-\lstinline|cp|命令用于复制文件或目录。
+cp命令用于复制文件或目录。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -782,7 +781,7 @@ cp [OPTION]... SOURCE... DIRECTORY
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|cp|参数说明}
+	\caption{cp参数说明}
 \end{table}
 
 \newpage
@@ -791,7 +790,7 @@ cp [OPTION]... SOURCE... DIRECTORY
 
 \subsection{mv (move)}
 
-\lstinline|mv|命令用来为文件或目录改名、或将文件或目录移入其它位置。
+mv命令用来为文件或目录改名、或将文件或目录移入其它位置。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -820,7 +819,7 @@ mv [OPTION]... SOURCE... DIRECTORY
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|mv|参数说明}
+	\caption{mv参数说明}
 \end{table}
 
 \newpage
@@ -829,7 +828,7 @@ mv [OPTION]... SOURCE... DIRECTORY
 
 \subsection{rename}
 
-\lstinline|rename|命令用字符串替换的方式批量改变文件名，\lstinline|rename|命令支持正则表达式。
+rename命令用字符串替换的方式批量改变文件名，rename命令支持正则表达式。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -850,12 +849,12 @@ rename [options] <expression> <replacement> <file>...
 
 \subsection{find}
 
-\lstinline|find|命令用于在指定目录下查找文件，任何位于参数之前的字符串都将被视为欲查找的目录名。如果使用该命令时，不设置任何参数，则将在当前目录下查找子目录与文件，并且将查找到的子目录和文件全部进行显示。 \\
+find命令用于在指定目录下查找文件，任何位于参数之前的字符串都将被视为欲查找的目录名。如果使用该命令时，不设置任何参数，则将在当前目录下查找子目录与文件，并且将查找到的子目录和文件全部进行显示。 \\
 
-\lstinline|find|命令可以指定查找方式：
+find命令可以指定查找方式：
 
 \begin{enumerate}
-	\item 按照文件类型查找：使用\lstinline|-type|参数可以查找不同类型的文件
+	\item 按照文件类型查找：使用-type参数可以查找不同类型的文件
 	      \vspace{-0.5cm}
 	      \begin{lstlisting}
 # 查找Desktop目录下所有d（目录）类型的文件
@@ -888,7 +887,7 @@ find ./Desktop/ -type d
 		      \caption{文件类型}
 	      \end{table}
 
-	\item 按照文件名查找：使用\lstinline|-name|参数可以按照文件名查找，使用\lstinline|!|取反可以排除指定的文件
+	\item 按照文件名查找：使用-name参数可以按照文件名查找，使用【!】取反可以排除指定的文件
 	      \vspace{-0.5cm}
 	      \begin{lstlisting}
 # 查找Desktop目录下所有.txt文件
@@ -911,7 +910,7 @@ find ./Desktop/ -name *.txt -exec rm {} \;
 
 \subsection{file}
 
-\lstinline|file|命令用于查看文件类型和文件的编码格式。
+file命令用于查看文件类型和文件的编码格式。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -931,7 +930,7 @@ file [-bcLvz][-f <filename>][-m <magicfile>...][dir...]
 			\hline
 			-f            & 表示files-from FILE，列出文件中文件名的文件类型                                 \\
 			\hline
-			-F            & 表示separator STRING，使用指定符号替换输出文件名后默认的\lstinline|:| \\
+			-F            & 表示separator STRING，使用指定符号替换输出文件名后默认的【:】 \\
 			\hline
 			-L            & 表示dereference，查看对应软链接文件的文件类型                                   \\
 			\hline
@@ -939,12 +938,12 @@ file [-bcLvz][-f <filename>][-m <magicfile>...][dir...]
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|file|参数说明}
+	\caption{file参数说明}
 \end{table}
 
 \subsection{cat}
 
-\lstinline|cat|命令用于来查看文件内容。
+cat命令用于来查看文件内容。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -968,12 +967,12 @@ cat [OPTION]... [FILE]...
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|cat|参数说明}
+	\caption{cat参数说明}
 \end{table}
 
 \subsection{more}
 
-\lstinline|more|命令类似\lstinline|cat|，不过会以一页一页的形式显示，更方便使用者逐页阅读。空格键可以显示下一页，按【b】键可以显示上一页。
+more命令类似cat，不过会以一页一页的形式显示，更方便使用者逐页阅读。空格键可以显示下一页，按【b】键可以显示上一页。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -993,13 +992,13 @@ more [options] <file>...
 			\hline
 			-c            & 从顶部清屏并显示                                                          \\
 			\hline
-			-p            & 通过清除窗口而不是滚屏来对文件进行换页，与\lstinline|-c|选项相似 \\
+			-p            & 通过清除窗口而不是滚屏来对文件进行换页，与-c选项相似 \\
 			\hline
 			-s            & 把连续的多个空行显示为一行                                                \\
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|more|参数说明}
+	\caption{more参数说明}
 \end{table}
 
 \newpage
@@ -1008,7 +1007,7 @@ more [options] <file>...
 
 \subsection{tar}
 
-\lstinline|tar|命令用于压缩和解压文件。
+tar命令用于压缩和解压文件。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -1045,12 +1044,12 @@ tar -xzvf filename.tar.gz
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|tar|参数说明}
+	\caption{tar参数说明}
 \end{table}
 
 \subsection{zip}
 
-\lstinline|zip|命令用于压缩文件，\lstinline|unzip|命令用于解压缩zip文件。
+zip命令用于压缩文件，unzip命令用于解压缩zip文件。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -1081,7 +1080,7 @@ unzip filename.zip
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|zip|参数说明}
+	\caption{zip参数说明}
 \end{table}
 
 \newpage
@@ -1289,14 +1288,14 @@ Linux中进程的状态有五种：
 
 	\item 不可中断：收到信号不唤醒和不可运行, 进程必须等待直到有中断发生
 
-	\item 僵死：进程已终止, 但进程描述符存在, 直到父进程调用\lstinline|wait4()|系统调用后释放
+	\item 僵死：进程已终止, 但进程描述符存在, 直到父进程调用wait4()系统调用后释放
 
 	\item 进程收到SIGSTOP、SIGSTP、SIGTIN、SIGTOU信号后停止运行
 \end{enumerate}
 
 \subsection{查看进程}
 
-在启动一个进程之后，使用\lstinline|ps|命令可以查看启动软件的进程。
+在启动一个进程之后，使用ps命令可以查看启动软件的进程。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -1322,10 +1321,10 @@ ps [options]
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|ps|参数说明}
+	\caption{ps参数说明}
 \end{table}
 
-\lstinline|ps|命令只能查看输入命令那一刻获取到的进程信息，而\lstinline|top|命令可以实时监测进程信息。
+ps命令只能查看输入命令那一刻获取到的进程信息，而top命令可以实时监测进程信息。
 
 \begin{table}[H]
 	\centering
@@ -1360,7 +1359,7 @@ ps [options]
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|top|标识符}
+	\caption{top标识符}
 \end{table}
 
 \newpage
@@ -1369,7 +1368,7 @@ ps [options]
 
 \subsection{kill}
 
-\lstinline|kill|命令用于删除执行中的进程。
+kill命令用于删除执行中的进程。
 
 \begin{table}[H]
 	\centering
@@ -1384,10 +1383,10 @@ ps [options]
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|kill|参数说明}
+	\caption{kill参数说明}
 \end{table}
 
-\lstinline|killall|命令与\lstinline|kill|不同的是它会杀死指定名字的所有进程，\lstinline|kill|命令用于杀死指定进程PID，需要配合\lstinline|ps|使用，而\lstinline|killall|直接对进程的名字进行操作，更加方便。
+killall命令与kill不同的是它会杀死指定名字的所有进程，kill命令用于杀死指定进程PID，需要配合ps使用，而killall直接对进程的名字进行操作，更加方便。
 
 \begin{table}[H]
 	\centering
@@ -1422,7 +1421,7 @@ ps [options]
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|killall|参数说明}
+	\caption{killall参数说明}
 \end{table}
 
 \newpage
@@ -1431,7 +1430,7 @@ ps [options]
 
 \subsection{df}
 
-\lstinline|df|命令用于查看磁盘空间使用情况。
+df命令用于查看磁盘空间使用情况。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -1465,12 +1464,12 @@ df [OPTION]... [FILE]...
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|df|参数说明}
+	\caption{df参数说明}
 \end{table}
 
 \subsection{du}
 
-\lstinline|du|命令用于显示文件或目录所占用的磁盘空间。
+du命令用于显示文件或目录所占用的磁盘空间。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -1502,7 +1501,7 @@ du [OPTION]... [FILE]...
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|du|参数说明}
+	\caption{du参数说明}
 \end{table}
 
 \newpage
@@ -1533,7 +1532,7 @@ cat /etc/shadow
 
 \subsection{添加用户}
 
-使用root登录Linux之后就可以使用\lstinline|useradd|命令添加普通用户，并通过`\lstinline|passwd|命令可以设置用户密码。
+使用root登录Linux之后就可以使用useradd命令添加普通用户，并通过passwd命令可以设置用户密码。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -1543,7 +1542,7 @@ passwd [username]
 
 \subsection{修改用户}
 
-使用\lstinline|usermod|命令可以修改用户信息。
+使用usermod命令可以修改用户信息。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -1552,7 +1551,7 @@ usermod -l [new_username] [old_username]
 
 \subsection{删除用户}
 
-使用root登录Linux之后就可以使用\lstinline|userdel|命令删除普通用户。
+使用root登录Linux之后就可以使用userdel命令删除普通用户。
 
 \vspace{-0.5cm}
 \begin{lstlisting}
@@ -1574,7 +1573,7 @@ userdel -rf [username]
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|userdel|参数说明}
+	\caption{userdel参数说明}
 \end{table}
 
 \newpage
@@ -1583,7 +1582,7 @@ userdel -rf [username]
 
 \subsubsection{文件权限}
 
-有时候某些文件为了安全起见，只有只读权限，没有写入权限和执行权限，而这些权限一般和用户或用户组有关。通过\lstinline|ls -l|命令可以查看文件权限相关信息。
+有时候某些文件为了安全起见，只有只读权限，没有写入权限和执行权限，而这些权限一般和用户或用户组有关。通过ls -l命令可以查看文件权限相关信息。
 
 \begin{figure}[H]
 	\centering
@@ -1625,7 +1624,7 @@ userdel -rf [username]
 
 \subsection{chmod}
 
-\lstinline|chmod|命令可以控制用户对文件的权限的命令。
+chmod命令可以控制用户对文件的权限的命令。
 
 \begin{figure}[H]
 	\centering
@@ -1655,10 +1654,10 @@ userdel -rf [username]
 			\hline
 		\end{tabular}
 	}
-	\caption{\lstinline|chmod|参数说明}
+	\caption{chmod参数说明}
 \end{table}
 
-\lstinline|chmod|命令也可以使用八进制数来指定权限。文件或目录的权限位是由9个权限位来控制，每三位为一组。
+chmod命令也可以使用八进制数来指定权限。文件或目录的权限位是由9个权限位来控制，每三位为一组。
 
 \begin{figure}[H]
 	\centering
