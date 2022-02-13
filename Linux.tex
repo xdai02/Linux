@@ -60,104 +60,81 @@
 \thispagestyle{empty}
 
 \begin{tikzpicture}[overlay,remember picture]
-	% Background color
-	\fill[
-		black!2]
-	(current page.south west) rectangle (current page.north east);
+    % Background color
+    \fill[
+        black!2]
+    (current page.south west) rectangle (current page.north east);
 
-	% Rectangles
-	\shade[
-		left color=Dandelion,
-		right color=Dandelion!40,
-		transform canvas ={rotate around ={45:($(current page.north west)+(0,-6)$)}}]
-	($(current page.north west)+(0,-6)$) rectangle ++(9,1.5);
+    % Rectangles
+    \shade[
+        left color=Dandelion,
+        right color=Dandelion!40,
+        transform canvas ={rotate around ={45:($(current page.north west)+(0,-6)$)}}]
+    ($(current page.north west)+(0,-6)$) rectangle ++(9,1.5);
 
-	\shade[
-		left color=lightgray,
-		right color=lightgray!50,
-		rounded corners=0.75cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}]
-	($(current page.north west)+(0.5,-10)$) rectangle ++(15,1.5);
+    \shade[
+        left color=lightgray,
+        right color=lightgray!50,
+        rounded corners=0.75cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}]
+    ($(current page.north west)+(0.5,-10)$) rectangle ++(15,1.5);
 
-	\shade[
-		left color=lightgray,
-		rounded corners=0.3cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}] ($(current page.north west)+(1.5,-9.55)$) rectangle ++(7,.6);
+    \shade[
+        left color=lightgray,
+        rounded corners=0.3cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}] ($(current page.north west)+(1.5,-9.55)$) rectangle ++(7,.6);
 
-	\shade[
-		left color=orange!80,
-		right color=orange!60,
-		rounded corners=0.4cm,
-		transform canvas ={rotate around ={45:($(current page.north)+(-1.5,-3)$)}}]
-	($(current page.north)+(-1.5,-3)$) rectangle ++(9,0.8);
+    \shade[
+        left color=orange!80,
+        right color=orange!60,
+        rounded corners=0.4cm,
+        transform canvas ={rotate around ={45:($(current page.north)+(-1.5,-3)$)}}]
+    ($(current page.north)+(-1.5,-3)$) rectangle ++(9,0.8);
 
-	\shade[
-		left color=red!80,
-		right color=red!80,
-		rounded corners=0.9cm,
-		transform canvas ={rotate around ={45:($(current page.north)+(-3,-8)$)}}] ($(current page.north)+(-3,-8)$) rectangle ++(15,1.8);
+    \shade[
+        left color=red!80,
+        right color=red!80,
+        rounded corners=0.9cm,
+        transform canvas ={rotate around ={45:($(current page.north)+(-3,-8)$)}}] ($(current page.north)+(-3,-8)$) rectangle ++(15,1.8);
 
-	\shade[
-		left color=orange,
-		right color=Dandelion,
-		rounded corners=0.9cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(4,-15.5)$)}}]
-	($(current page.north west)+(4,-15.5)$) rectangle ++(30,1.8);
+    \shade[
+        left color=orange,
+        right color=Dandelion,
+        rounded corners=0.9cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(4,-15.5)$)}}]
+    ($(current page.north west)+(4,-15.5)$) rectangle ++(30,1.8);
 
-	\shade[
-		left color=RoyalBlue,
-		right color=Emerald,
-		rounded corners=0.75cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(13,-10)$)}}]
-	($(current page.north west)+(13,-10)$) rectangle ++(15,1.5);
+    \shade[
+        left color=RoyalBlue,
+        right color=Emerald,
+        rounded corners=0.75cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(13,-10)$)}}]
+    ($(current page.north west)+(13,-10)$) rectangle ++(15,1.5);
 
-	\shade[
-		left color=lightgray,
-		rounded corners=0.3cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(18,-8)$)}}]
-	($(current page.north west)+(18,-8)$) rectangle ++(15,0.6);
+    \shade[
+        left color=lightgray,
+        rounded corners=0.3cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(18,-8)$)}}]
+    ($(current page.north west)+(18,-8)$) rectangle ++(15,0.6);
 
-	\shade[
-		left color=lightgray,
-		rounded corners=0.4cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(19,-5.65)$)}}]
-	($(current page.north west)+(19,-5.65)$) rectangle ++(15,0.8);
+    \shade[
+        left color=lightgray,
+        rounded corners=0.4cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(19,-5.65)$)}}]
+    ($(current page.north west)+(19,-5.65)$) rectangle ++(15,0.8);
 
-	\shade[
-		left color=OrangeRed,
-		right color=red!80,
-		rounded corners=0.6cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(20,-9)$)}}]
-	($(current page.north west)+(20,-9)$) rectangle ++(14,1.2);
+    \shade[
+        left color=OrangeRed,
+        right color=red!80,
+        rounded corners=0.6cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(20,-9)$)}}]
+    ($(current page.north west)+(20,-9)$) rectangle ++(14,1.2);
 
-	% Year
-	% \draw[ultra thick,gray]
-	% ($(current page.center)+(5,2)$) -- ++(0,-3cm)
-	node[
-			midway,
-			left=0.25cm,
-			text width=5cm,
-			align=right,
-			black!75
-		]
-		{
-			% {\fontsize{25}{30} \selectfont \bf ANNUAL \\[10pt] REPORT}
-		}
-	node[
-			midway,
-			right=0.25cm,
-			text width=6cm,
-			align=left,
-			orange]
-		{
-			% {\fontsize{72}{86.4} \selectfont 2020}
-		};
-
-	% Title
-	\node[align=center] at ($(current page.center)+(0,-5)$)
-	{
-	{\fontsize{72}{72} \selectfont {{Linux}}} \\[2cm]
-	{\fontsize{20}{19.2} \selectfont \textcolor{orange}{ \bf 极夜酱}}\\[4pt]};
+    % Title
+    \node[align=center] at ($(current page.center)+(0,-5)$)
+    {
+    {\fontsize{72}{72} \selectfont {{Linux}}}\\[2cm]
+    {\fontsize{20}{19.2} \selectfont \textcolor{orange}{ \bf 极夜酱}}\\[4pt]};
 \end{tikzpicture}
 
 \newpage
@@ -177,114 +154,114 @@
 
 \subsection{Linux简介}
 
-Linux，全称GNU/Linux，是一套免费使用和自由传播的类UNIX操作系统，其内核由Linus Benedict Torvalds于1991年首次发布，它主要受到MINIX和UNIX思想的启发，是一个基于POSIX（Portable Operating System Interface）的多用户、多任务、支持多线程和多CPU的操作系统。它能运行主要的UNIX工具软件、应用程序和网络协议。Linux继承了UNIX以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。Linux有上百种不同的发行版，如Debian、Red Hat、Ubuntu、SuSE和CentOS等。 \\
+Linux，全称GNU/Linux，是一套免费使用和自由传播的类UNIX操作系统，其内核由Linus Benedict Torvalds于1991年首次发布，它主要受到MINIX和UNIX思想的启发，是一个基于POSIX（Portable Operating System Interface）的多用户、多任务、支持多线程和多CPU的操作系统。它能运行主要的UNIX工具软件、应用程序和网络协议。Linux继承了UNIX以网络为核心的设计思想，是一个性能稳定的多用户网络操作系统。Linux有上百种不同的发行版，如Debian、Red Hat、Ubuntu、SuSE和CentOS等。
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-1/1.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-1/1.png}
 \end{figure}
 
-Linux操作系统性能稳定，并且是开源的操作系统软件。它的防火墙相关的组件保证了系统的安全，且配置简单、性能高效。在很多企业网络中追求速度和安全，Linux不仅仅是被网络运维人员当作服务器使用，也可以作为网络防火墙。 \\
+Linux操作系统性能稳定，并且是开源的操作系统软件。它的防火墙相关的组件保证了系统的安全，且配置简单、性能高效。在很多企业网络中追求速度和安全，Linux不仅仅是被网络运维人员当作服务器使用，也可以作为网络防火墙。\\
 
-Linux具有开放源码、没有版权、技术社区用户多等特点，用户可以通过网络或其他途径免费获得，并可以任意修改其源代码，这是其他的操作系统所做不到的。正是由于这一点，来自全世界的无数程序员参与了Linux的修改、编写工作，程序员可以根据自己的兴趣和灵感对其进行改变，这让Linux吸收了无数程序员的精华，不断壮大。尤其系统中内嵌网络协议栈，经过适当的配置就可实现路由器的功能。这些特点使得Linux成为开发路由交换设备的理想开发平台。 \\
+Linux具有开放源码、没有版权、技术社区用户多等特点，用户可以通过网络或其他途径免费获得，并可以任意修改其源代码，这是其他的操作系统所做不到的。正是由于这一点，来自全世界的无数程序员参与了Linux的修改、编写工作，程序员可以根据自己的兴趣和灵感对其进行改变，这让Linux吸收了无数程序员的精华，不断壮大。尤其系统中内嵌网络协议栈，经过适当的配置就可实现路由器的功能。这些特点使得Linux成为开发路由交换设备的理想开发平台。\\
 
 \subsection{Linux发展史}
 
-20世纪80年代，计算机硬件的性能不断提高，PC的市场不断扩大，当时可供计算机选用的操作系统主要有UNIX、DOS和MacOS这几种。UNIX价格昂贵，不能运行于PC；DOS显得简陋，且源代码被软件厂商严格保密；MacOS是一种专门用于苹果计算机的操作系统。此时，计算机科学领域迫切需要一个更加完善、强大、廉价和完全开放的操作系统。由于供教学使用的典型操作系统很少，因此当时在荷兰当教授的美国人Andrew S. Tanenbaum编写了一个操作系统，名为MINIX，为了向学生讲述操作系统内部工作原理。MINIX虽然很好，但只是一个用于教学目的的简单操作系统，而不是一个强有力的实用操作系统，然而最大的好处就是公开源代码。全世界学计算机的学生都通过钻研MINIX源代码来了解电脑里运行的MINIX操作系统，芬兰赫尔辛基大学大学二年级的学生Linus Torvalds就是其中一个。在吸收了MINIX精华的基础上，Linus于1991年写出了属于自己的Linux操作系统，版本为Linux 0.01，是Linux时代开始的标志。他利用UNIX的核心，去除繁杂的核心程序，改写成适用于一般计算机的x86系统，并放在网络上供大家下载，1994年推出完整的核心Version 1.0。至此，Linux逐渐成为功能完善、稳定的操作系统，并被广泛使用。 \\
+20世纪80年代，计算机硬件的性能不断提高，PC的市场不断扩大，当时可供计算机选用的操作系统主要有UNIX、DOS和MacOS这几种。UNIX价格昂贵，不能运行于PC；DOS显得简陋，且源代码被软件厂商严格保密；MacOS是一种专门用于苹果计算机的操作系统。此时，计算机科学领域迫切需要一个更加完善、强大、廉价和完全开放的操作系统。由于供教学使用的典型操作系统很少，因此当时在荷兰当教授的美国人Andrew S. Tanenbaum编写了一个操作系统，名为MINIX，为了向学生讲述操作系统内部工作原理。MINIX虽然很好，但只是一个用于教学目的的简单操作系统，而不是一个强有力的实用操作系统，然而最大的好处就是公开源代码。全世界学计算机的学生都通过钻研MINIX源代码来了解电脑里运行的MINIX操作系统，芬兰赫尔辛基大学大学二年级的学生Linus Torvalds就是其中一个。在吸收了MINIX精华的基础上，Linus于1991年写出了属于自己的Linux操作系统，版本为Linux 0.01，是Linux时代开始的标志。他利用UNIX的核心，去除繁杂的核心程序，改写成适用于一般计算机的x86系统，并放在网络上供大家下载，1994年推出完整的核心Version 1.0。至此，Linux逐渐成为功能完善、稳定的操作系统，并被广泛使用。\\
 
 \newpage
 
 \section{Linux内核}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{img/C1/1-2/1.png}
+    \centering
+    \includegraphics[scale=0.8]{img/C1/1-2/1.png}
 \end{figure}
 
-这幅漫画是以一个房子的侧方刨面图来绘画的,使用这样的房子来代表Linux内核。 \\
+这幅漫画是以一个房子的侧方刨面图来绘画的,使用这样的房子来代表Linux内核。\\
 
-作为一个房子，最重要的莫过于地基。地基（底层）由一排排的文件柜组成，井然有序，文件柜里放置着文件。左上角，有一只胸前挂着421号牌的小企鹅，它表示着PID（Process ID）为421的进程正在查看文件柜中的文件，这代表系统中正有一个进程在访问文件系统。 \\
+作为一个房子，最重要的莫过于地基。地基（底层）由一排排的文件柜组成，井然有序，文件柜里放置着文件。左上角，有一只胸前挂着421号牌的小企鹅，它表示着PID（Process ID）为421的进程正在查看文件柜中的文件，这代表系统中正有一个进程在访问文件系统。\\
 
-在右下角有一只小狗，它是看门狗watchdog，这代表对文件系统的监控。 \\
+在右下角有一只小狗，它是看门狗watchdog，这代表对文件系统的监控。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{img/C1/1-2/2.png}
+    \centering
+    \includegraphics[scale=0.8]{img/C1/1-2/2.png}
 \end{figure}
 
-看完了地基，接下来来看地基上面的一层。 \\
+看完了地基，接下来来看地基上面的一层。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{img/C1/1-2/3.png}
+    \centering
+    \includegraphics[scale=0.8]{img/C1/1-2/3.png}
 \end{figure}
 
-这一层最引人瞩目的莫过于中间的一块垫子，众多小企鹅在围着着桌子坐着，这个垫子的区域代表进程表。 \\
+这一层最引人瞩目的莫过于中间的一块垫子，众多小企鹅在围着着桌子坐着，这个垫子的区域代表进程表。\\
 
-左上角有一个小企鹅站着，仿佛在说些什么，这显然是一位家长式的人物，不过看起来周围坐的那些小企鹅不是很听话。它代表着Linux内核中的初始化（init）进程，也就是常说的PID为1的进程。桌子上坐的小企鹅都在等待状态（wait）中，等待工作任务。 \\
+左上角有一个小企鹅站着，仿佛在说些什么，这显然是一位家长式的人物，不过看起来周围坐的那些小企鹅不是很听话。它代表着Linux内核中的初始化（init）进程，也就是常说的PID为1的进程。桌子上坐的小企鹅都在等待状态（wait）中，等待工作任务。\\
 
-垫子（进程表）两旁有两只小狗，它们会监控小企鹅的状态（监控进程），当小企鹅们不听话时，它就会汪汪地叫喊起来。 \\
+垫子（进程表）两旁有两只小狗，它们会监控小企鹅的状态（监控进程），当小企鹅们不听话时，它就会汪汪地叫喊起来。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-2/4.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-2/4.png}
 \end{figure}
 
-在这层的左侧，有一只号牌为1341的小企鹅守在门口，门上写着80，说明这个PID为1341的小企鹅负责接80端口，也就是常说的HTTP端口。小企鹅头上有一片羽毛，这片羽毛大有来历，它是著名的HTTP服务器Apache的Logo。 \\
+在这层的左侧，有一只号牌为1341的小企鹅守在门口，门上写着80，说明这个PID为1341的小企鹅负责接80端口，也就是常说的HTTP端口。小企鹅头上有一片羽毛，这片羽毛大有来历，它是著名的HTTP服务器Apache的Logo。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-2/5.png}
-	\includegraphics[scale=0.7]{img/C1/1-2/6.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-2/5.png}
+    \includegraphics[scale=0.7]{img/C1/1-2/6.png}
 \end{figure}
 
-向右可以看到这里仍有一扇门，门上写着21，但是看起来这扇门似乎年久失修，上面的门牌号都歪了，门口也没人守着。看起来这个21端口的FTP协议有点老旧了，目前用的人也比以前少了，以至于这里都没人接待了。 \\
+向右可以看到这里仍有一扇门，门上写着21，但是看起来这扇门似乎年久失修，上面的门牌号都歪了，门口也没人守着。看起来这个21端口的FTP协议有点老旧了，目前用的人也比以前少了，以至于这里都没人接待了。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-2/7.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-2/7.png}
 \end{figure}
 
-而在最右侧的一个门牌号22的门的待遇就大为不同，居然有一只带着墨镜的小企鹅在守着，看起来好酷啊，它是黑衣人叔叔吗？为什么要这么酷的一个企鹅呢，因为22端口是SSH端口，是一个非常重要的远程连接端口，通常通过这个端口进行远程管理，所以对这个端口进来的人要仔细审查。 \\
+而在最右侧的一个门牌号22的门的待遇就大为不同，居然有一只带着墨镜的小企鹅在守着，看起来好酷啊，它是黑衣人叔叔吗？为什么要这么酷的一个企鹅呢，因为22端口是SSH端口，是一个非常重要的远程连接端口，通常通过这个端口进行远程管理，所以对这个端口进来的人要仔细审查。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-2/8.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-2/8.png}
 \end{figure}
 
-在图片的左上角，有一个向下台阶。进程们可以通过这个台阶，到文件系统中去读取文件，进行操作。 \\
+在图片的左上角，有一个向下台阶。进程们可以通过这个台阶，到文件系统中去读取文件，进行操作。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-2/9.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-2/9.png}
 \end{figure}
 
-在这一层中，有一个身上写着217的小企鹅，它正满头大汗地看着自己的手表。这只小企鹅就是定时任务crontab，它会时刻关注时间，查看是否要去做某个工作。 \\
+在这一层中，有一个身上写着217的小企鹅，它正满头大汗地看着自己的手表。这只小企鹅就是定时任务crontab，它会时刻关注时间，查看是否要去做某个工作。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-2/10.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-2/10.png}
 \end{figure}
 
-在图片的中部，有两个小企鹅扛着管道（pipeline）在行走，一只小企鹅可以把自己手上的东西通过这个管道传递给后面的小企鹅。不过怎么看起来前面这只企鹅累得满头大汗，而后面那只企鹅似乎游刃有余。 \\
+在图片的中部，有两个小企鹅扛着管道（pipeline）在行走，一只小企鹅可以把自己手上的东西通过这个管道传递给后面的小企鹅。不过怎么看起来前面这只企鹅累得满头大汗，而后面那只企鹅似乎游刃有余。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-2/11.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-2/11.png}
 \end{figure}
 
-在这一层还有另外的一个小企鹅，它手上拿着一杯红酒，身上写着411，看起来有点不胜酒力。它就是Wine，可以执行一些来自Windows的任务。 \\
+在这一层还有另外的一个小企鹅，它手上拿着一杯红酒，身上写着411，看起来有点不胜酒力。它就是Wine，可以执行一些来自Windows的任务。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-2/12.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-2/12.png}
 \end{figure}
 
-在一层之上，还有一个跃层，这里有很多不同的屏幕，每个屏幕上写着TTY（终端）。最左边tty4上输入了fre，这是想输入freshmeat吗？旁边的tty2和tty3就正常多了，看起来是比较正常的命令。tty7显示的图形界面，图形界面（x-window）一般就在7号终端。tty5和tty6是空的，这表示这两个终端没人用。 \\
+在一层之上，还有一个跃层，这里有很多不同的屏幕，每个屏幕上写着TTY（终端）。最左边tty4上输入了fre，这是想输入freshmeat吗？旁边的tty2和tty3就正常多了，看起来是比较正常的命令。tty7显示的图形界面，图形界面（x-window）一般就在7号终端。tty5和tty6是空的，这表示这两个终端没人用。\\
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-2/13.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-2/13.png}
 \end{figure}
 
 \newpage
@@ -293,133 +270,133 @@ Linux具有开放源码、没有版权、技术社区用户多等特点，用户
 
 \subsection{虚拟机（Virtual Machine）}
 
-虚拟机指通过软件模拟的具有完整硬件系统功能的、运行在一个完全隔离环境中的完整计算机系统。在实体计算机中能够完成的工作在虚拟机中都能够实现。在计算机中创建虚拟机时，需要将实体机的部分硬盘和内存容量作为虚拟机的硬盘和内存容量。每个虚拟机都有独立的CMOS、硬盘和操作系统，可以像使用实体机一样对虚拟机进行操作。 \\
+虚拟机指通过软件模拟的具有完整硬件系统功能的、运行在一个完全隔离环境中的完整计算机系统。在实体计算机中能够完成的工作在虚拟机中都能够实现。在计算机中创建虚拟机时，需要将实体机的部分硬盘和内存容量作为虚拟机的硬盘和内存容量。每个虚拟机都有独立的CMOS、硬盘和操作系统，可以像使用实体机一样对虚拟机进行操作。\\
 
-虚拟机安装之后可以在虚拟机中安装Linux操作系统，常见的虚拟机软件有VirtualBox、VMware等。 \\
+虚拟机安装之后可以在虚拟机中安装Linux操作系统，常见的虚拟机软件有VirtualBox、VMware等。\\
 
 \subsection{VMWare}
 
-通过VMWare官网\url{https://my.vmware.com/cn/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_pro/15_0#product_downloads}注册账号并下载合适版本的Windows系统虚拟机。 \\
+通过VMWare官网\url{https://my.vmware.com/cn/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_workstation_pro/15_0#product_downloads}注册账号并下载合适版本的Windows系统虚拟机。
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{img/C1/1-3/1.png}
+    \centering
+    \includegraphics[scale=0.4]{img/C1/1-3/1.png}
 \end{figure}
 
 \subsection{CentOS}
 
-通过CentOS官网\url{https://www.centos.org/download/}可下载CentOS操作系统.iso镜像文件。 \\
+通过CentOS官网\url{https://www.centos.org/download/}可下载CentOS操作系统.iso镜像文件。
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{img/C1/1-3/2.png}
+    \centering
+    \includegraphics[scale=0.8]{img/C1/1-3/2.png}
 \end{figure}
 
-打开安装好的VMWare虚拟机，选择【创建新的虚拟机】。 \\
+打开安装好的VMWare虚拟机，选择【创建新的虚拟机】。
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/3.png}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/4.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/3.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/5.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/4.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/6.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/5.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/7.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/6.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/8.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/7.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/9.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/8.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/10.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/9.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/11.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/10.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/12.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/11.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/13.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/12.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/14.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/13.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/15.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/14.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-3/16.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/15.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{img/C1/1-3/17.png}
+    \centering
+    \includegraphics[]{img/C1/1-3/16.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{img/C1/1-3/18.png}
+    \centering
+    \includegraphics[scale=0.6]{img/C1/1-3/17.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.5]{img/C1/1-3/19.png}
+    \centering
+    \includegraphics[scale=0.6]{img/C1/1-3/18.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=1.3]{img/C1/1-3/20.png}
+    \centering
+    \includegraphics[scale=0.5]{img/C1/1-3/19.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=1.4]{img/C1/1-3/21.png}
+    \centering
+    \includegraphics[scale=1.3]{img/C1/1-3/20.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{img/C1/1-3/22.png}
+    \centering
+    \includegraphics[scale=1.4]{img/C1/1-3/21.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=1.4]{img/C1/1-3/23.png}
+    \centering
+    \includegraphics[scale=0.8]{img/C1/1-3/22.png}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=1.4]{img/C1/1-3/23.png}
 \end{figure}
 
 \newpage
@@ -428,61 +405,62 @@ Linux具有开放源码、没有版权、技术社区用户多等特点，用户
 
 \subsection{网络配置}
 
-给新安装的CentOS操作系统配置网络，有了网络之后在虚拟局域网内CentOS这一台实例就相当于一台局域网服务器了。 \\
+给新安装的CentOS操作系统配置网络，有了网络之后在虚拟局域网内CentOS这一台实例就相当于一台局域网服务器了。
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C1/1-4/1.png}
+    \centering
+    \includegraphics[]{img/C1/1-4/1.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{img/C1/1-4/2.png}
+    \centering
+    \includegraphics[scale=0.8]{img/C1/1-4/2.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{img/C1/1-4/3.png}
+    \centering
+    \includegraphics[scale=0.6]{img/C1/1-4/3.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.65]{img/C1/1-4/4.png}
+    \centering
+    \includegraphics[scale=0.65]{img/C1/1-4/4.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{img/C1/1-4/5.png}
+    \centering
+    \includegraphics[scale=0.6]{img/C1/1-4/5.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.65]{img/C1/1-4/6.png}
+    \centering
+    \includegraphics[scale=0.65]{img/C1/1-4/6.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{img/C1/1-4/7.png}
+    \centering
+    \includegraphics[scale=0.6]{img/C1/1-4/7.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{img/C1/1-4/8.png}
+    \centering
+    \includegraphics[scale=0.4]{img/C1/1-4/8.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{img/C1/1-4/9.png}
+    \centering
+    \includegraphics[scale=0.7]{img/C1/1-4/9.png}
 \end{figure}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{img/C1/1-4/10.png}
+    \centering
+    \includegraphics[scale=0.6]{img/C1/1-4/10.png}
 \end{figure}
 
 重启CentOS Linux，登录后打开终端（terminal），切换到root用户：
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 su -
 \end{lstlisting}
@@ -490,6 +468,7 @@ su -
 进入网络配置目录，查看当前目录文件，并配置网络文件：
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 # 进入网络配置文件目录
 cd /etc/sysconfig/network-scripts
@@ -502,6 +481,7 @@ vim ifcfg-ens33
 进入ifcfg-ens33文件后，按【i】键可对文本进行编辑：
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 TYPE="Ethernet"
 PROXY_METHOD="none"
@@ -520,11 +500,12 @@ DNS1=192.168.19.2
 DNS2=8.8.8.8
 \end{lstlisting}
 
-配置完成后，按【ESC】键，输入【:wq】进行保存并退出。 \\
+配置完成后，按【ESC】键，输入【:wq】进行保存并退出。\\
 
 重启CentOS即可完成配置：
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 reboot
 \end{lstlisting}
@@ -532,13 +513,14 @@ reboot
 重启后可通过ping命令检查网络是否畅通：
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 ping baidu.com
 \end{lstlisting}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{img/C1/1-4/11.png}
+    \centering
+    \includegraphics[scale=0.6]{img/C1/1-4/11.png}
 \end{figure}
 
 \newpage
@@ -547,16 +529,16 @@ ping baidu.com
 
 \subsection{MobaXterm}
 
-实际业务中使用较多的是终端工具连接远程服务器，较为常见的Linux服务器终端连接工具有Xshell、MobaXterm、putty等等。其中MobaXterm对个人免费使用，且功能齐全。 \\
+实际业务中使用较多的是终端工具连接远程服务器，较为常见的Linux服务器终端连接工具有Xshell、MobaXterm、putty等等。其中MobaXterm对个人免费使用，且功能齐全。\\
 
-通过MobaXterm官网\url{https://moba.en.softonic.com/download}下载并安装对应版本。 \\
+通过MobaXterm官网\url{https://moba.en.softonic.com/download}下载并安装对应版本。
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.4]{img/C1/1-5/1.png}
+    \centering
+    \includegraphics[scale=0.4]{img/C1/1-5/1.png}
 \end{figure}
 
-远程连接Linux服务器之后即可使用命令操作Linux操作系统。 \\
+远程连接Linux服务器之后即可使用命令操作Linux操作系统。\\
 
 \newpage
 
@@ -569,6 +551,7 @@ ping baidu.com
 root目录相当于Windows中的我的电脑。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 # 进入root目录
 cd /root
@@ -580,41 +563,41 @@ ls
 \end{lstlisting}
 
 \begin{itemize}
-	\item /bin：二进制应用程序目录，其中包含二进制文件CentOS系统所有用户使用的命令。
+    \item /bin：二进制应用程序目录，其中包含二进制文件CentOS系统所有用户使用的命令。
 
-	\item /boot：开始启动引导目录，启动配置文件，其中包括了Linux内核文件与开机所需要的文件。
+    \item /boot：开始启动引导目录，启动配置文件，其中包括了Linux内核文件与开机所需要的文件。
 
-	\item /dev：设备目录，设备相关的文件和目录，其中包括了所有应用程序的配置文件和启动/停止某个程序的shell脚本。
+    \item /dev：设备目录，设备相关的文件和目录，其中包括了所有应用程序的配置文件和启动/停止某个程序的shell脚本。
 
-	\item /etc：配置文件目录，配置文件、启动脚本等文件。
+    \item /etc：配置文件目录，配置文件、启动脚本等文件。
 
-	\item /home：本地用户目录，所有不同权限的系统用户可在home目录分配存储个人用户的文件和资料。
+    \item /home：本地用户目录，所有不同权限的系统用户可在home目录分配存储个人用户的文件和资料。
 
-	\item /lib：系统使用的函数库的目录，程序在执行过程中，需要调用一些额外的参数时需要函数库的协助。
+    \item /lib：系统使用的函数库的目录，程序在执行过程中，需要调用一些额外的参数时需要函数库的协助。
 
-	\item /media：挂载可移动介质，诸如CD、数码相机、软盘、光盘等，可移除设备挂载目录。
+    \item /media：挂载可移动介质，诸如CD、数码相机、软盘、光盘等，可移除设备挂载目录。
 
-	\item /mnt：挂载文件系统，临时安装目录，系统的管理员可拥有挂载文件系统的权限。
+    \item /mnt：挂载文件系统，临时安装目录，系统的管理员可拥有挂载文件系统的权限。
 
-	\item /opt：第三方软件安装目录，第三方应用程序一般放在此目录下，但实际中通常习惯放在/usr/local目录下。
+    \item /opt：第三方软件安装目录，第三方应用程序一般放在此目录下，但实际中通常习惯放在/usr/local目录下。
 
-	\item /proc：特殊动态信息目录，数据都在内存中，如系统核心、外部设备、网络状态，用以维护系统信息和状态，包括当前运行中的进程信息。
+    \item /proc：特殊动态信息目录，数据都在内存中，如系统核心、外部设备、网络状态，用以维护系统信息和状态，包括当前运行中的进程信息。
 
-	\item /root：root用户主文件夹，其他用户均放置在/home目录下。
+    \item /root：root用户主文件夹，其他用户均放置在/home目录下。
 
-	\item /run：系统运行时所需的文件，曾在/var/run中，后来拆分成独立的/run目录，重启后重新生成对应的目录数据。
+    \item /run：系统运行时所需的文件，曾在/var/run中，后来拆分成独立的/run目录，重启后重新生成对应的目录数据。
 
-	\item /sbin：重要的系统二进制文件，包含二进制可执行文件，这个目录下的linux命令通常都是由系统管理员使用的，对系统进行维护。
+    \item /sbin：重要的系统二进制文件，包含二进制可执行文件，这个目录下的linux命令通常都是由系统管理员使用的，对系统进行维护。
 
-	\item /srv：服务启动后需要访问的数据目录。
+    \item /srv：服务启动后需要访问的数据目录。
 
-	\item /sys：系统文件，记录核心系统硬件信息。
+    \item /sys：系统文件，记录核心系统硬件信息。
 
-	\item /tmp：临时文件目录，存放临时文件目录，所有用户对该目录均可读写。
+    \item /tmp：临时文件目录，存放临时文件目录，所有用户对该目录均可读写。
 
-	\item /usr：应用程序放置目录，包含绝大部分所有用户都能访问的应用程序和文件。
+    \item /usr：应用程序放置目录，包含绝大部分所有用户都能访问的应用程序和文件。
 
-	\item /var：经常变化的文件，存放系统执行过程中经常改变的文件。
+    \item /var：经常变化的文件，存放系统执行过程中经常改变的文件。
 \end{itemize}
 
 \newpage
@@ -625,39 +608,34 @@ ls
 
 ls命令列出当前所在目录中所有文件和目录的列表，并且使用不同的命令参数可以筛选和限制展示出来的列表。
 
-\vspace{-0.5cm}
-\begin{lstlisting}
-ls [OPTION]... [FILE]...
-\end{lstlisting}
-
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                          \\
-			\hline
-			-a            & 表示all，列出目录下的所有文件，包括隐藏文件            \\
-			\hline
-			-c            & 表示按照最后更改时间排序，可以使用-l显示出时间         \\
-			\hline
-			-g            & 对输出的文件不进行排序                                 \\
-			\hline
-			-i            & 表示inode，打印出每个文件的inode号                     \\
-			\hline
-			-l            & 将文件权限、所有者、文件大小等信息详细列出，可简写为ll \\
-			\hline
-			-r            & 表示reverse，按照当前排序顺序相反的顺序排列            \\
-			\hline
-			-R            & 表示recursive，递归列出所有子目录层                    \\
-			\hline
-			-s            & 表示size，以块大小为单位列出所有文件的大小             \\
-			\hline
-			-S            & 根据文件大小排序                                       \\
-			\hline
-		\end{tabular}
-	}
-	\caption{ls参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                          \\
+            \hline
+            -a            & 表示all，列出目录下的所有文件，包括隐藏文件            \\
+            \hline
+            -c            & 表示按照最后更改时间排序，可以使用-l显示出时间         \\
+            \hline
+            -g            & 对输出的文件不进行排序                                 \\
+            \hline
+            -i            & 表示inode，打印出每个文件的inode号                     \\
+            \hline
+            -l            & 将文件权限、所有者、文件大小等信息详细列出，可简写为ll \\
+            \hline
+            -r            & 表示reverse，按照当前排序顺序相反的顺序排列            \\
+            \hline
+            -R            & 表示recursive，递归列出所有子目录层                    \\
+            \hline
+            -s            & 表示size，以块大小为单位列出所有文件的大小             \\
+            \hline
+            -S            & 根据文件大小排序                                       \\
+            \hline
+        \end{tabular}
+    }
+    \caption{ls参数说明}
 \end{table}
 
 \newpage
@@ -669,12 +647,13 @@ ls [OPTION]... [FILE]...
 在对Linux目录操作过程中，可以使用pwd (print working directory)命令查看当前所处目录的绝对路径，cd命令可以切换到不同的路径。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 pwd
 cd [dir]
 \end{lstlisting}
 
-其中dir可以为绝对路径或相对路径。若目录名称省略，则变换至使用者的home目录。另外，【~】也表示为home目录，【.】表示目前所在的目录，【..】表示目前目录位置的上一层目录。 \\
+其中dir可以为绝对路径或相对路径。若目录名称省略，则变换至使用者的home目录。另外，【~】也表示为home目录，【.】表示目前所在的目录，【..】表示目前目录位置的上一层目录。\\
 
 若每一个目录名称一个个敲出来就会显得有些繁琐，这个时候就可以使用Tab键进行自动补全。
 
@@ -687,6 +666,7 @@ cd [dir]
 touch命令用于修改文件或者目录的时间属性，包括存取时间和更改时间。若文件不存在，系统会建立一个新的文件。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 touch [OPTION]... FILE...
 \end{lstlisting}
@@ -696,22 +676,23 @@ touch [OPTION]... FILE...
 mkdir命令用于创建目录。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 mkdir [-p] dir
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                      \\
-			\hline
-			-p            & 确保目录名称存在，不存在的就建一个 \\
-			\hline
-		\end{tabular}
-	}
-	\caption{mkdir参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                      \\
+            \hline
+            -p            & 确保目录名称存在，不存在的就建一个 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{mkdir参数说明}
 \end{table}
 
 \newpage
@@ -723,28 +704,29 @@ mkdir [-p] dir
 rm命令用于删除一个文件或者目录。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 rm [OPTION]... [FILE]...
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                               \\
-			\hline
-			-f            & 表示force，忽略不存在的文件和参数，强制删除 \\
-			\hline
-			-i            & 进行任何删除操作前必须先确认                \\
-			\hline
-			-r / -R       & 表示recursive，递归删除该目录下的所有目录层 \\
-			\hline
-			-d            & 表示dir，删除可能包含有数据的目录           \\
-			\hline
-		\end{tabular}
-	}
-	\caption{rm参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                               \\
+            \hline
+            -f            & 表示force，忽略不存在的文件和参数，强制删除 \\
+            \hline
+            -i            & 进行任何删除操作前必须先确认                \\
+            \hline
+            -r / -R       & 表示recursive，递归删除该目录下的所有目录层 \\
+            \hline
+            -d            & 表示dir，删除可能包含有数据的目录           \\
+            \hline
+        \end{tabular}
+    }
+    \caption{rm参数说明}
 \end{table}
 
 \newpage
@@ -756,33 +738,34 @@ rm [OPTION]... [FILE]...
 cp命令用于复制文件或目录。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 cp [OPTION]... [-T] SOURCE DEST
 cp [OPTION]... SOURCE... DIRECTORY
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                                \\
-			\hline
-			-f            & 覆盖已经存在的目标文件而不给出提示                           \\
-			\hline
-			-i            & 在覆盖目标文件之前给出提示                                   \\
-			\hline
-			-r            & 递归复制该目录下所有子目录和文件                             \\
-			\hline
-			-p            & 除复制文件的内容外，还将修改时间和访问权限一起复制到新文件中 \\
-			\hline
-			-d            & 复制时保留链接，链接相当于Windows下的快捷方式                \\
-			\hline
-			-a            & 作用等同于-dpr参数组合                                       \\
-			\hline
-		\end{tabular}
-	}
-	\caption{cp参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                                \\
+            \hline
+            -f            & 覆盖已经存在的目标文件而不给出提示                           \\
+            \hline
+            -i            & 在覆盖目标文件之前给出提示                                   \\
+            \hline
+            -r            & 递归复制该目录下所有子目录和文件                             \\
+            \hline
+            -p            & 除复制文件的内容外，还将修改时间和访问权限一起复制到新文件中 \\
+            \hline
+            -d            & 复制时保留链接，链接相当于Windows下的快捷方式                \\
+            \hline
+            -a            & 作用等同于-dpr参数组合                                       \\
+            \hline
+        \end{tabular}
+    }
+    \caption{cp参数说明}
 \end{table}
 
 \newpage
@@ -794,33 +777,34 @@ cp [OPTION]... SOURCE... DIRECTORY
 mv命令用来为文件或目录改名、或将文件或目录移入其它位置。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 mv [OPTION]... [-T] SOURCE DEST
 mv [OPTION]... SOURCE... DIRECTORY
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                          \\
-			\hline
-			-b            & 若有文件覆盖时，则覆盖前先行备份                       \\
-			\hline
-			-f            & 表示force，若目标文件已经存在，则不会询问强制覆盖      \\
-			\hline
-			-i            & 表示interactive，若目标文件已经存在，询问是否覆盖      \\
-			\hline
-			-n            & 表示no-clobber，不会覆盖已经存在的文件                 \\
-			\hline
-			-d            & 复制时保留链接，链接相当于Windows下的快捷方式          \\
-			\hline
-			-u            & 表示update，当源文件比目标文件新或目标文件不存在时移动 \\
-			\hline
-		\end{tabular}
-	}
-	\caption{mv参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                          \\
+            \hline
+            -b            & 若有文件覆盖时，则覆盖前先行备份                       \\
+            \hline
+            -f            & 表示force，若目标文件已经存在，则不会询问强制覆盖      \\
+            \hline
+            -i            & 表示interactive，若目标文件已经存在，询问是否覆盖      \\
+            \hline
+            -n            & 表示no-clobber，不会覆盖已经存在的文件                 \\
+            \hline
+            -d            & 复制时保留链接，链接相当于Windows下的快捷方式          \\
+            \hline
+            -u            & 表示update，当源文件比目标文件新或目标文件不存在时移动 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{mv参数说明}
 \end{table}
 
 \newpage
@@ -832,16 +816,17 @@ mv [OPTION]... SOURCE... DIRECTORY
 rename命令用字符串替换的方式批量改变文件名，rename命令支持正则表达式。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 rename [options] <expression> <replacement> <file>...
 \end{lstlisting}
 
 \begin{itemize}
-	\item expression：文件名中需要替换的字符串
+    \item expression：文件名中需要替换的字符串
 
-	\item replacement：替换的字符串
+    \item replacement：替换的字符串
 
-	\item file：需要重命名的文件列表
+    \item file：需要重命名的文件列表
 \end{itemize}
 
 \newpage
@@ -850,60 +835,68 @@ rename [options] <expression> <replacement> <file>...
 
 \subsection{find}
 
-find命令用于在指定目录下查找文件，任何位于参数之前的字符串都将被视为欲查找的目录名。如果使用该命令时，不设置任何参数，则将在当前目录下查找子目录与文件，并且将查找到的子目录和文件全部进行显示。 \\
+find命令用于在指定目录下查找文件，任何位于参数之前的字符串都将被视为欲查找的目录名。如果使用该命令时，不设置任何参数，则将在当前目录下查找子目录与文件，并且将查找到的子目录和文件全部进行显示。\\
 
 find命令可以指定查找方式：
 
-\begin{enumerate}
-	\item 按照文件类型查找：使用-type参数可以查找不同类型的文件
-	      \vspace{-0.5cm}
-	      \begin{lstlisting}
+\subsubsection{按照文件类型查找}
+
+使用-type参数可以查找不同类型的文件。
+
+\vspace{-0.5cm}
+
+\begin{lstlisting}
 # 查找Desktop目录下所有d（目录）类型的文件
 find ./Desktop/ -type d
 \end{lstlisting}
 
-	      \begin{table}[H]
-		      \centering
-		      \setlength{\tabcolsep}{5mm}{
-			      \begin{tabular}{|c|l|}
-				      \hline
-				      \textbf{文件类型} & \textbf{描述} \\
-				      \hline
-				      f                 & 普通文件      \\
-				      \hline
-				      d                 & 目录文件      \\
-				      \hline
-				      l                 & 符号连接文件  \\
-				      \hline
-				      b                 & 块设备文件    \\
-				      \hline
-				      c                 & 字符设备文件  \\
-				      \hline
-				      p                 & 管道文件      \\
-				      \hline
-				      s                 & 套接字文件    \\
-				      \hline
-			      \end{tabular}
-		      }
-		      \caption{文件类型}
-	      \end{table}
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{文件类型} & \textbf{描述} \\
+            \hline
+            f                 & 普通文件      \\
+            \hline
+            d                 & 目录文件      \\
+            \hline
+            l                 & 符号连接文件  \\
+            \hline
+            b                 & 块设备文件    \\
+            \hline
+            c                 & 字符设备文件  \\
+            \hline
+            p                 & 管道文件      \\
+            \hline
+            s                 & 套接字文件    \\
+            \hline
+        \end{tabular}
+    }
+    \caption{文件类型}
+\end{table}
 
-	\item 按照文件名查找：使用-name参数可以按照文件名查找，使用【!】取反可以排除指定的文件
-	      \vspace{-0.5cm}
-	      \begin{lstlisting}
+\subsubsection{按照文件名查找}
+
+使用-name参数可以按照文件名查找，使用【!】取反可以排除指定的文件。
+
+\vspace{-0.5cm}
+
+\begin{lstlisting}
 # 查找Desktop目录下所有.txt文件
 find ./Desktop/ -name *.txt
 # 查找Desktop目录下除了.txt以外的文件
 find ./Desktop/ ! -name *.txt
-            \end{lstlisting}
+\end{lstlisting}
 
-	      在查找文件时也可以直接对指定文件执行特定的操作。
-	      \vspace{-0.5cm}
-	      \begin{lstlisting}
+在查找文件时也可以直接对指定文件执行特定的操作。
+
+\vspace{-0.5cm}
+
+\begin{lstlisting}
 # 查找Desktop目录下所有.txt文件，并执行删除操作
 find ./Desktop/ -name *.txt -exec rm {} \;
-            \end{lstlisting}
-\end{enumerate}
+\end{lstlisting}
 
 \newpage
 
@@ -914,32 +907,33 @@ find ./Desktop/ -name *.txt -exec rm {} \;
 file命令用于查看文件类型和文件的编码格式。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 file [-bcLvz][-f <filename>][-m <magicfile>...][dir...]
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                                 \\
-			\hline
-			-b            & 表示brief，显示查看结果时，不显示文件名                       \\
-			\hline
-			-c            & 表示checking-printout，显示指令执行过程                       \\
-			\hline
-			-f            & 表示files-from FILE，列出文件中文件名的文件类型               \\
-			\hline
-			-F            & 表示separator STRING，使用指定符号替换输出文件名后默认的【:】 \\
-			\hline
-			-L            & 表示dereference，查看对应软链接文件的文件类型                 \\
-			\hline
-			-z            & 表示uncompress，尝试去解读压缩文件的内容                      \\
-			\hline
-		\end{tabular}
-	}
-	\caption{file参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                                 \\
+            \hline
+            -b            & 表示brief，显示查看结果时，不显示文件名                       \\
+            \hline
+            -c            & 表示checking-printout，显示指令执行过程                       \\
+            \hline
+            -f            & 表示files-from FILE，列出文件中文件名的文件类型               \\
+            \hline
+            -F            & 表示separator STRING，使用指定符号替换输出文件名后默认的【:】 \\
+            \hline
+            -L            & 表示dereference，查看对应软链接文件的文件类型                 \\
+            \hline
+            -z            & 表示uncompress，尝试去解读压缩文件的内容                      \\
+            \hline
+        \end{tabular}
+    }
+    \caption{file参数说明}
 \end{table}
 
 \subsection{cat}
@@ -947,28 +941,29 @@ file [-bcLvz][-f <filename>][-m <magicfile>...][dir...]
 cat命令用于来查看文件内容。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 cat [OPTION]... [FILE]...
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                     \\
-			\hline
-			-A            & 表示show-all，展示所有内容                        \\
-			\hline
-			-b            & 表示number-nonblank，对查看的内容的非空行进行编号 \\
-			\hline
-			-n            & 表示number，对查看的内容行数编号输出              \\
-			\hline
-			-s            & 表示seueeze-blank，将多行连续的空行压缩为一行     \\
-			\hline
-		\end{tabular}
-	}
-	\caption{cat参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                     \\
+            \hline
+            -A            & 表示show-all，展示所有内容                        \\
+            \hline
+            -b            & 表示number-nonblank，对查看的内容的非空行进行编号 \\
+            \hline
+            -n            & 表示number，对查看的内容行数编号输出              \\
+            \hline
+            -s            & 表示seueeze-blank，将多行连续的空行压缩为一行     \\
+            \hline
+        \end{tabular}
+    }
+    \caption{cat参数说明}
 \end{table}
 
 \subsection{more}
@@ -976,30 +971,31 @@ cat [OPTION]... [FILE]...
 more命令类似cat，不过会以一页一页的形式显示，更方便使用者逐页阅读。空格键可以显示下一页，按【b】键可以显示上一页。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 more [options] <file>...
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                        \\
-			\hline
-			+n            & 从第n行开始显示                                      \\
-			\hline
-			-n            & 一次显示的行数                                       \\
-			\hline
-			-c            & 从顶部清屏并显示                                     \\
-			\hline
-			-p            & 通过清除窗口而不是滚屏来对文件进行换页，与-c选项相似 \\
-			\hline
-			-s            & 把连续的多个空行显示为一行                           \\
-			\hline
-		\end{tabular}
-	}
-	\caption{more参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                        \\
+            \hline
+            +n            & 从第n行开始显示                                      \\
+            \hline
+            -n            & 一次显示的行数                                       \\
+            \hline
+            -c            & 从顶部清屏并显示                                     \\
+            \hline
+            -p            & 通过清除窗口而不是滚屏来对文件进行换页，与-c选项相似 \\
+            \hline
+            -s            & 把连续的多个空行显示为一行                           \\
+            \hline
+        \end{tabular}
+    }
+    \caption{more参数说明}
 \end{table}
 
 \newpage
@@ -1011,41 +1007,42 @@ more [options] <file>...
 tar命令用于压缩和解压文件。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 tar -czvf filename.tar.gz [file]...
 tar -xzvf filename.tar.gz
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}              \\
-			\hline
-			-c            & 新建立压缩档案             \\
-			\hline
-			-x            & 解压缩                     \\
-			\hline
-			-t            & 查看内容                   \\
-			\hline
-			-u            & 更新原压缩包的内容         \\
-			\hline
-			-z            & gzip属性                   \\
-			\hline
-			-j            & bz2属性                    \\
-			\hline
-			-Z            & compress属性               \\
-			\hline
-			-v            & 显示所有过程               \\
-			\hline
-			-O            & 将文件解压缩成标准输出形式 \\
-			\hline
-			-f            & 档案名称，此参数在最后出现 \\
-			\hline
-		\end{tabular}
-	}
-	\caption{tar参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}              \\
+            \hline
+            -c            & 新建立压缩档案             \\
+            \hline
+            -x            & 解压缩                     \\
+            \hline
+            -t            & 查看内容                   \\
+            \hline
+            -u            & 更新原压缩包的内容         \\
+            \hline
+            -z            & gzip属性                   \\
+            \hline
+            -j            & bz2属性                    \\
+            \hline
+            -Z            & compress属性               \\
+            \hline
+            -v            & 显示所有过程               \\
+            \hline
+            -O            & 将文件解压缩成标准输出形式 \\
+            \hline
+            -f            & 档案名称，此参数在最后出现 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{tar参数说明}
 \end{table}
 
 \subsection{zip}
@@ -1053,35 +1050,36 @@ tar -xzvf filename.tar.gz
 zip命令用于压缩文件，unzip命令用于解压缩zip文件。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 zip -r filename.zip [file]...
 unzip filename.zip
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                    \\
-			\hline
-			-d            & 从压缩文件内删除指定的文件                       \\
-			\hline
-			-f            & 更新现有的文件                                   \\
-			\hline
-			-F            & 尝试修复已损坏的压缩文件                         \\
-			\hline
-			-m            & 将文件压缩并删除原始文件，即把文件移到压缩文件中 \\
-			\hline
-			-q            & 不显示指令执行过程                               \\
-			\hline
-			-r            & 递归处理，将指定目录下的所有文件和子目录一并处理 \\
-			\hline
-			-v            & 显示指令执行过程或显示版本信息                   \\
-			\hline
-		\end{tabular}
-	}
-	\caption{zip参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                    \\
+            \hline
+            -d            & 从压缩文件内删除指定的文件                       \\
+            \hline
+            -f            & 更新现有的文件                                   \\
+            \hline
+            -F            & 尝试修复已损坏的压缩文件                         \\
+            \hline
+            -m            & 将文件压缩并删除原始文件，即把文件移到压缩文件中 \\
+            \hline
+            -q            & 不显示指令执行过程                               \\
+            \hline
+            -r            & 递归处理，将指定目录下的所有文件和子目录一并处理 \\
+            \hline
+            -v            & 显示指令执行过程或显示版本信息                   \\
+            \hline
+        \end{tabular}
+    }
+    \caption{zip参数说明}
 \end{table}
 
 \newpage
@@ -1095,40 +1093,41 @@ unzip filename.zip
 nano是UNIX系统中的一个文本编辑器，大部分Linux发行版本默认都安装了nano文本编辑器。和Vim编辑器相比，nano编辑器没有那么强大，比如没有语法高亮、自动缩进等功能，但它拥有基本的查看和修改文件的功能。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 nano <filename>
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{命令} & \textbf{描述}                          \\
-			\hline
-			CTRL + G      & 显示nano编辑器的帮助窗口               \\
-			\hline
-			CTRL + C      & 显示光标在文件中的位置信息             \\
-			\hline
-			CTRL + K      & 剪切文本行，并将其保存在剪切缓冲区     \\
-			\hline
-			CTRL + O      & 将当前文本编辑器缓冲区的内容写入文件   \\
-			\hline
-			CTRL + U      & 将剪切缓冲区中的内容放入当前行         \\
-			\hline
-			CTRL + Y      & 翻动到文本编辑缓冲区的上一页内容       \\
-			\hline
-			CTRL + V      & 翻动到文本编辑缓冲区的下一页内容       \\
-			\hline
-			CTRL + W      & 在文本编辑缓冲区中搜索单词或短语       \\
-			\hline
-			CTRL + X      & 关闭当前文本编辑缓冲区，退出nano编辑器 \\
-			\hline
-			CTRL + T      & 启动可用的拼写检查器                   \\
-			\hline
-		\end{tabular}
-	}
-	\caption{nano编辑器命令}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{命令} & \textbf{描述}                          \\
+            \hline
+            CTRL + G      & 显示nano编辑器的帮助窗口               \\
+            \hline
+            CTRL + C      & 显示光标在文件中的位置信息             \\
+            \hline
+            CTRL + K      & 剪切文本行，并将其保存在剪切缓冲区     \\
+            \hline
+            CTRL + O      & 将当前文本编辑器缓冲区的内容写入文件   \\
+            \hline
+            CTRL + U      & 将剪切缓冲区中的内容放入当前行         \\
+            \hline
+            CTRL + Y      & 翻动到文本编辑缓冲区的上一页内容       \\
+            \hline
+            CTRL + V      & 翻动到文本编辑缓冲区的下一页内容       \\
+            \hline
+            CTRL + W      & 在文本编辑缓冲区中搜索单词或短语       \\
+            \hline
+            CTRL + X      & 关闭当前文本编辑缓冲区，退出nano编辑器 \\
+            \hline
+            CTRL + T      & 启动可用的拼写检查器                   \\
+            \hline
+        \end{tabular}
+    }
+    \caption{nano编辑器命令}
 \end{table}
 
 \newpage
@@ -1137,127 +1136,125 @@ nano <filename>
 
 \subsection{Vim编辑器}
 
-Vim编辑器是由vi发展而来的文本编辑器，它的功能有代码补全、编译、错误跳转等，在程序开发时被广泛使用。 \\
+Vim编辑器是由vi发展而来的文本编辑器，它的功能有代码补全、编译、错误跳转等，在程序开发时被广泛使用。\\
 
-Vim的命令组合是它的设计理念，同时Vim与很多快捷键设置和正则表达式类似，可以辅助记忆，并且优化之后的Vim针对程序员很友好。 \\
+Vim的命令组合是它的设计理念，同时Vim与很多快捷键设置和正则表达式类似，可以辅助记忆，并且优化之后的Vim针对程序员很友好。\\
 
 Vim编辑器有三种模式：
 
 \begin{enumerate}
-	\item 命令模式：刚进入时默认为命令模式，可以查看和查找文件内容，不能修改内容。
+    \item 命令模式：刚进入时默认为命令模式，可以查看和查找文件内容，不能修改内容。
 
-	\item 插入模式：在普通模式下按下【i】、【a】、【o】键可以进入插入模式，此时编辑器处于编辑状态，能对当前的文件内容修改。在插入模式下按【ESC】键可以回到命令模式。
+    \item 插入模式：在普通模式下按下【i】、【a】、【o】键可以进入插入模式，此时编辑器处于编辑状态，能对当前的文件内容修改。在插入模式下按【ESC】键可以回到命令模式。
 
-	\item 底线命令模式：在命令模式下输入【:】可以进入底线命令模式，此时可以对编辑后的文件进行保存、退出等操作。在底线命令模式下按【ESC】键可以回到命令模式。
+    \item 底线命令模式：在命令模式下输入【:】可以进入底线命令模式，此时可以对编辑后的文件进行保存、退出等操作。在底线命令模式下按【ESC】键可以回到命令模式。
 \end{enumerate}
 
 \begin{figure}[H]
-	\centering
-	\begin{tikzpicture}
-		\draw[rounded corners] (0,0) rectangle (3,1);
-		\draw[rounded corners] (-3,-3) rectangle (0, -2);
-		\draw[rounded corners] (3,-3) rectangle (6, -2);
+    \centering
+    \begin{tikzpicture}
+        \draw[rounded corners] (0,0) rectangle (3,1);
+        \draw[rounded corners] (-3,-3) rectangle (0, -2);
+        \draw[rounded corners] (3,-3) rectangle (6, -2);
 
-		\node at(1.5, 0.5) {命令模式};
-		\node at(-1.5, -2.5) {输入模式};
-		\node at(4.5, -2.5) {底线命令模式};
+        \node at(1.5, 0.5) {命令模式};
+        \node at(-1.5, -2.5) {输入模式};
+        \node at(4.5, -2.5) {底线命令模式};
 
-		\draw[->,very thick] (-3, 3) node[right]{进入} -- (0, 1) node[left]{vim filename};
-		\draw[->,very thick] (3,1) node[right]{输入【:wq】} -- (6,3) node[above]{退出};
-		\draw[->,very thick] (0.5, 0) -- (-2.5, -2);
-		\node at(-2,-0.5) {输入【i/a/o】};
-		\draw[->,very thick] (-2, -2) -- (1,0);
-		\node at(0,-1.5) {ESC键};
-		\draw[->,very thick] (2, 0) -- (4,-2);
-		\node at(2,-1) {输入【:】};
-		\draw[->,very thick] (4.5, -2) -- (2.5,0);
-		\node at(6,-1.5) {命令以回车结束};
-	\end{tikzpicture}
-	\caption{Vim/Vi工作模式}
+        \draw[->,very thick] (-3, 3) node[right]{进入} -- (0, 1) node[left]{vim filename};
+        \draw[->,very thick] (3,1) node[right]{输入【:wq】} -- (6,3) node[above]{退出};
+        \draw[->,very thick] (0.5, 0) -- (-2.5, -2);
+        \node at(-2,-0.5) {输入【i/a/o】};
+        \draw[->,very thick] (-2, -2) -- (1,0);
+        \node at(0,-1.5) {ESC键};
+        \draw[->,very thick] (2, 0) -- (4,-2);
+        \node at(2,-1) {输入【:】};
+        \draw[->,very thick] (4.5, -2) -- (2.5,0);
+        \node at(6,-1.5) {命令以回车结束};
+    \end{tikzpicture}
+    \caption{Vim/Vi工作模式}
 \end{figure}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{命令}       & \textbf{描述}      \\
-			\hline
-			↑ / k               & 光标往上移动一格   \\
-			\hline
-			↓ / j               & 光标往下移动一格   \\
-			\hline
-			← / h               & 光标往左移动一格   \\
-			\hline
-			→ / l               & 光标往右移动一格   \\
-			\hline
-			PageUp / CTRL + B   & 光标往上翻动一屏   \\
-			\hline
-			PageDown / CTRL + F & 光标标往下翻动一屏 \\
-			\hline
-			gg                  & 光标移动到第一行   \\
-			\hline
-			G                   & 光标移动到最后一行 \\
-			\hline
-			nG                  & 光标移动到第n行    \\
-			\hline
-		\end{tabular}
-	}
-	\caption{光标移动键}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{命令}       & \textbf{描述}      \\
+            \hline
+            ↑ / k               & 光标往上移动一格   \\
+            \hline
+            ↓ / j               & 光标往下移动一格   \\
+            \hline
+            ← / h               & 光标往左移动一格   \\
+            \hline
+            → / l               & 光标往右移动一格   \\
+            \hline
+            PageUp / CTRL + B   & 光标往上翻动一屏   \\
+            \hline
+            PageDown / CTRL + F & 光标标往下翻动一屏 \\
+            \hline
+            gg                  & 光标移动到第一行   \\
+            \hline
+            G                   & 光标移动到最后一行 \\
+            \hline
+            nG                  & 光标移动到第n行    \\
+            \hline
+        \end{tabular}
+    }
+    \caption{光标移动键}
 \end{table}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{命令} & \textbf{描述}                                       \\
-			\hline
-			q             & 退出，若有修改内容，则会提示：E37：已修改但尚未保存 \\
-			\hline
-			q!            & 表示强制退出，不会保存修改的内容                    \\
-			\hline
-			w             & 保存修改内容                                        \\
-			\hline
-			wq            & 保存并退出                                          \\
-			\hline
-			wq!           & 强制保存退出                                        \\
-			\hline
-		\end{tabular}
-	}
-	\caption{底线命令模式}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{命令} & \textbf{描述}                                       \\
+            \hline
+            q             & 退出，若有修改内容，则会提示：E37：已修改但尚未保存 \\
+            \hline
+            q!            & 表示强制退出，不会保存修改的内容                    \\
+            \hline
+            w             & 保存修改内容                                        \\
+            \hline
+            wq            & 保存并退出                                          \\
+            \hline
+            wq!           & 强制保存退出                                        \\
+            \hline
+        \end{tabular}
+    }
+    \caption{底线命令模式}
 \end{table}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{命令} & \textbf{描述}                        \\
-			\hline
-			x             & 删除当前光标所在位置的字符           \\
-			\hline
-			dd            & 删除当前光标所在行                   \\
-			\hline
-			dw            & 删除当前光标所在位置的单词           \\
-			\hline
-			d\$           & 删除当前光标所在位置至行尾的内容     \\
-			\hline
-			J             & 删除当前光标所在行行尾的换行符       \\
-			\hline
-			u             & 撤销前一编辑命令                     \\
-			\hline
-			a             & 在当前光标后追加内容，切换到插入模式 \\
-			\hline
-			A             & 在当前光标所在行行尾追加数据         \\
-			\hline
-			r char        & 用char替换当前光标所在位置的单个字符 \\
-			\hline
-			R text        & 用text覆盖当前光标所在位置的数据     \\
-			\hline
-		\end{tabular}
-	}
-	\caption{命令模式}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{命令} & \textbf{描述}                        \\
+            \hline
+            x             & 删除当前光标所在位置的字符           \\
+            \hline
+            dd            & 删除当前光标所在行                   \\
+            \hline
+            dw            & 删除当前光标所在位置的单词           \\
+            \hline
+            d\$           & 删除当前光标所在位置至行尾的内容     \\
+            \hline
+            J             & 删除当前光标所在行行尾的换行符       \\
+            \hline
+            a             & 在当前光标后追加内容，切换到插入模式 \\
+            \hline
+            A             & 在当前光标所在行行尾追加数据         \\
+            \hline
+            r char        & 用char替换当前光标所在位置的单个字符 \\
+            \hline
+            R text        & 用text覆盖当前光标所在位置的数据     \\
+            \hline
+        \end{tabular}
+    }
+    \caption{命令模式}
 \end{table}
 
 \newpage
@@ -1268,30 +1265,30 @@ Vim编辑器有三种模式：
 
 \subsection{进程（Process）}
 
-进程指的是一个具有一定独立功能的程序关于某个数据集合的一次运行活动。进程是系统进行资源分配和调度运行的基本单位。 \\
+进程指的是一个具有一定独立功能的程序关于某个数据集合的一次运行活动。进程是系统进行资源分配和调度运行的基本单位。\\
 
 进程实体中包含三个组成部分：
 
 \begin{enumerate}
-	\item 程序
-	\item 数据
-	\item PCB (Process Control Block)
+    \item 程序
+    \item 数据
+    \item PCB (Process Control Block)
 \end{enumerate}
 
-程序（program）与进程是有区别的，程序是静态的，进程是动态的。当程序的可执行文件被装入内存后就会变成进程。进程可以认为是执行中的程序，进程需要一定资源（如CPU时间、内存、文件、I/O设备）完成任务。这些资源可以在创建的时候或者运行中分配。一个程序可以通过GUI (Graphic User Interface)图形用户界面的鼠标点击、CLI (Command-line Interface)命令行界面输入程序名等方式运行。 \\
+程序（program）与进程是有区别的，程序是静态的，进程是动态的。当程序的可执行文件被装入内存后就会变成进程。进程可以认为是执行中的程序，进程需要一定资源（如CPU时间、内存、文件、I/O设备）完成任务。这些资源可以在创建的时候或者运行中分配。一个程序可以通过GUI (Graphic User Interface)图形用户界面的鼠标点击、CLI (Command-line Interface)命令行界面输入程序名等方式运行。\\
 
 Linux中进程的状态有五种：
 
 \begin{enumerate}
-	\item 运行：正在运行或在运行队列中等待
+    \item 运行：正在运行或在运行队列中等待
 
-	\item 中断：休眠中、受阻或在等待某个条件的形成或接受到信号
+    \item 中断：休眠中、受阻或在等待某个条件的形成或接受到信号
 
-	\item 不可中断：收到信号不唤醒和不可运行, 进程必须等待直到有中断发生
+    \item 不可中断：收到信号不唤醒和不可运行, 进程必须等待直到有中断发生
 
-	\item 僵死：进程已终止, 但进程描述符存在, 直到父进程调用wait4()系统调用后释放
+    \item 僵死：进程已终止, 但进程描述符存在, 直到父进程调用wait4()系统调用后释放
 
-	\item 进程收到SIGSTOP、SIGSTP、SIGTIN、SIGTOU信号后停止运行
+    \item 进程收到SIGSTOP、SIGSTP、SIGTIN、SIGTOU信号后停止运行
 \end{enumerate}
 
 \subsection{查看进程}
@@ -1299,68 +1296,69 @@ Linux中进程的状态有五种：
 在启动一个进程之后，使用ps命令可以查看启动软件的进程。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 ps [options]
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                \\
-			\hline
-			-A            & 显示所有进程                 \\
-			\hline
-			-w            & 显示加宽可以显示较多的信息   \\
-			\hline
-			-au           & 显示较详细的信息             \\
-			\hline
-			-aux          & 显示所有包含其他使用者的行程 \\
-			\hline
-			-ef           & 查看全格式的全部进程         \\
-			\hline
-		\end{tabular}
-	}
-	\caption{ps参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                \\
+            \hline
+            -A            & 显示所有进程                 \\
+            \hline
+            -w            & 显示加宽可以显示较多的信息   \\
+            \hline
+            -au           & 显示较详细的信息             \\
+            \hline
+            -aux          & 显示所有包含其他使用者的行程 \\
+            \hline
+            -ef           & 查看全格式的全部进程         \\
+            \hline
+        \end{tabular}
+    }
+    \caption{ps参数说明}
 \end{table}
 
 ps命令只能查看输入命令那一刻获取到的进程信息，而top命令可以实时监测进程信息。
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{标识} & \textbf{描述}                                \\
-			\hline
-			PID           & 进程ID                                       \\
-			\hline
-			USER          & 进程属主名称                                 \\
-			\hline
-			PR            & 进程优先级                                   \\
-			\hline
-			NI            & 进程谦让度值                                 \\
-			\hline
-			VIRT          & 进程占用的虚拟内存总量                       \\
-			\hline
-			RES           & 进程占用的物理内存总量                       \\
-			\hline
-			SHR           & 进程和其它进程共享的内存总量                 \\
-			\hline
-			S             & 进程状态                                     \\
-			\hline
-			\%CPU         & 进程使用的CPU时间比例                        \\
-			\hline
-			\%MEM         & 进程使用的内存占可用内存的比例               \\
-			\hline
-			TIME+         & 自进程启动到目前为止CPU时间总数              \\
-			\hline
-			COMMAND       & 进程所对应的命令行名称，即程序启动时的程序名 \\
-			\hline
-		\end{tabular}
-	}
-	\caption{top标识符}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{标识} & \textbf{描述}                                \\
+            \hline
+            PID           & 进程ID                                       \\
+            \hline
+            USER          & 进程属主名称                                 \\
+            \hline
+            PR            & 进程优先级                                   \\
+            \hline
+            NI            & 进程谦让度值                                 \\
+            \hline
+            VIRT          & 进程占用的虚拟内存总量                       \\
+            \hline
+            RES           & 进程占用的物理内存总量                       \\
+            \hline
+            SHR           & 进程和其它进程共享的内存总量                 \\
+            \hline
+            S             & 进程状态                                     \\
+            \hline
+            \%CPU         & 进程使用的CPU时间比例                        \\
+            \hline
+            \%MEM         & 进程使用的内存占可用内存的比例               \\
+            \hline
+            TIME+         & 自进程启动到目前为止CPU时间总数              \\
+            \hline
+            COMMAND       & 进程所对应的命令行名称，即程序启动时的程序名 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{top标识符}
 \end{table}
 
 \newpage
@@ -1372,57 +1370,57 @@ ps命令只能查看输入命令那一刻获取到的进程信息，而top命令
 kill命令用于删除执行中的进程。
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                              \\
-			\hline
-			-l [sigspec]  & 1 (HUP)：重新加载、9 (KILL)：杀死进程、15 (TERM)：正常停止 \\
-			\hline
-			-s sigspec    & 指定要送出的信息                                           \\
-			\hline
-		\end{tabular}
-	}
-	\caption{kill参数说明}
+    \centering
+    \setlength{\tabcolsep}{3mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                              \\
+            \hline
+            -l [sigspec]  & 1 (HUP)：重新加载、9 (KILL)：杀死进程、15 (TERM)：正常停止 \\
+            \hline
+            -s sigspec    & 指定要送出的信息                                           \\
+            \hline
+        \end{tabular}
+    }
+    \caption{kill参数说明}
 \end{table}
 
 killall命令与kill不同的是它会杀死指定名字的所有进程，kill命令用于杀死指定进程PID，需要配合ps使用，而killall直接对进程的名字进行操作，更加方便。
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|l|l|}
-			\hline
-			\textbf{参数}        & \textbf{描述}                      \\
-			\hline
-			-e / --exact         & 进程需要和名字完成相符             \\
-			\hline
-			-I / --ignore-case   & 忽略大小写                         \\
-			\hline
-			-g / --process-group & 结束进程组                         \\
-			\hline
-			-i / --interactive   & 结束之前询问                       \\
-			\hline
-			-l / --list          & 列出所有的信号名称                 \\
-			\hline
-			-q / --quite         & 进程没有结束时，不输出任何信息     \\
-			\hline
-			-r / --regexp        & 将进程名模式解释为扩展的正则表达式 \\
-			\hline
-			-s / --signal        & 发送指定信号                       \\
-			\hline
-			-u / --user          & 结束指定用户的进程                 \\
-			\hline
-			-v / --verbose       & 显示详细执行过程                   \\
-			\hline
-			-w / --wait          & 等待所有的进程都结束               \\
-			\hline
-			--help               & 显示帮助信息                       \\
-			\hline
-		\end{tabular}
-	}
-	\caption{killall参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|l|l|}
+            \hline
+            \textbf{参数}        & \textbf{描述}                      \\
+            \hline
+            -e / --exact         & 进程需要和名字完成相符             \\
+            \hline
+            -I / --ignore-case   & 忽略大小写                         \\
+            \hline
+            -g / --process-group & 结束进程组                         \\
+            \hline
+            -i / --interactive   & 结束之前询问                       \\
+            \hline
+            -l / --list          & 列出所有的信号名称                 \\
+            \hline
+            -q / --quite         & 进程没有结束时，不输出任何信息     \\
+            \hline
+            -r / --regexp        & 将进程名模式解释为扩展的正则表达式 \\
+            \hline
+            -s / --signal        & 发送指定信号                       \\
+            \hline
+            -u / --user          & 结束指定用户的进程                 \\
+            \hline
+            -v / --verbose       & 显示详细执行过程                   \\
+            \hline
+            -w / --wait          & 等待所有的进程都结束               \\
+            \hline
+            --help               & 显示帮助信息                       \\
+            \hline
+        \end{tabular}
+    }
+    \caption{killall参数说明}
 \end{table}
 
 \newpage
@@ -1433,76 +1431,66 @@ killall命令与kill不同的是它会杀死指定名字的所有进程，kill�
 
 df命令用于查看磁盘空间使用情况。
 
-\vspace{-0.5cm}
-\begin{lstlisting}
-df [OPTION]... [FILE]...
-\end{lstlisting}
-
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                     \\
-			\hline
-			-a            & 表示all，显示所有的文件系统，包括虚拟文件系统     \\
-			\hline
-			-h            & 表示human-readable，以易读的格式显示              \\
-			\hline
-			-H            & 和-h参数一样，但是是以1k = 1000为单位             \\
-			\hline
-			-i            & 表示inodes，不用硬盘容量，而是以inode的数量来显示 \\
-			\hline
-			-k            & 以kb的容量显示各文件系统，相当于--block-size=1k   \\
-			\hline
-			-l            & 表示local，只显示本地文件系统                     \\
-			\hline
-			-t            & 只显示指定类型的文件系统                          \\
-			\hline
-			-T            & 显示文件系统类型                                  \\
-			\hline
-			-x            & 不显示指定类型的文件系统                          \\
-			\hline
-		\end{tabular}
-	}
-	\caption{df参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                     \\
+            \hline
+            -a            & 表示all，显示所有的文件系统，包括虚拟文件系统     \\
+            \hline
+            -h            & 表示human-readable，以易读的格式显示              \\
+            \hline
+            -H            & 和-h参数一样，但是是以1k = 1000为单位             \\
+            \hline
+            -i            & 表示inodes，不用硬盘容量，而是以inode的数量来显示 \\
+            \hline
+            -k            & 以kb的容量显示各文件系统，相当于--block-size=1k   \\
+            \hline
+            -l            & 表示local，只显示本地文件系统                     \\
+            \hline
+            -t            & 只显示指定类型的文件系统                          \\
+            \hline
+            -T            & 显示文件系统类型                                  \\
+            \hline
+            -x            & 不显示指定类型的文件系统                          \\
+            \hline
+        \end{tabular}
+    }
+    \caption{df参数说明}
 \end{table}
 
 \subsection{du}
 
 du命令用于显示文件或目录所占用的磁盘空间。
 
-\vspace{-0.5cm}
-\begin{lstlisting}
-du [OPTION]... [FILE]...
-\end{lstlisting}
-
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                                               \\
-			\hline
-			-a            & 表示all，列出所有文件和目录容量大小                         \\
-			\hline
-			-b            & 表示bytes，以字节为单位列出文件和目录的容量大小             \\
-			\hline
-			-c            & 表示total，除了列出文件和目录的容量大小外，列出总的容量大小 \\
-			\hline
-			-h            & 表示human-readable，以易读的格式显示                        \\
-			\hline
-			-k            & 以KB为单位                                                  \\
-			\hline
-			-m            & 以MB为单位                                                  \\
-			\hline
-			-s            & 仅列出总量，而不列出每个目录和文件的大小                    \\
-			\hline
-			-S            & 和-s参数类似，但是统计时不包含子目录的容量大小              \\
-			\hline
-		\end{tabular}
-	}
-	\caption{du参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                                               \\
+            \hline
+            -a            & 表示all，列出所有文件和目录容量大小                         \\
+            \hline
+            -b            & 表示bytes，以字节为单位列出文件和目录的容量大小             \\
+            \hline
+            -c            & 表示total，除了列出文件和目录的容量大小外，列出总的容量大小 \\
+            \hline
+            -h            & 表示human-readable，以易读的格式显示                        \\
+            \hline
+            -k            & 以KB为单位                                                  \\
+            \hline
+            -m            & 以MB为单位                                                  \\
+            \hline
+            -s            & 仅列出总量，而不列出每个目录和文件的大小                    \\
+            \hline
+            -S            & 和-s参数类似，但是统计时不包含子目录的容量大小              \\
+            \hline
+        \end{tabular}
+    }
+    \caption{du参数说明}
 \end{table}
 
 \newpage
@@ -1513,20 +1501,22 @@ du [OPTION]... [FILE]...
 
 \subsection{用户类型}
 
-Linux系统是一个多用户多任务的操作系统，一般可将用户分为root用户和普通用户两大类。root是系统管理员用户，在命令行前面显示【\#】，普通用户在命令行前面显示【\$】。 \\
+Linux系统是一个多用户多任务的操作系统，一般可将用户分为root用户和普通用户两大类。root是系统管理员用户，在命令行前面显示【\#】，普通用户在命令行前面显示【\$】。\\
 
 Linux系统中/etc/passwd文件保存了系统中所有用户的主要信息，这些信息以【:】分隔。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 cat /etc/passwd
 \end{lstlisting}
 
-文件中每行代表一个用户，这些用户中的绝大多数是系统或服务正常运行所必需的用户，这种用户称为系统用户或伪用户。系统用户是不能登录系统的，但是这些用户同样也不能删除，因为一旦删除，依赖这些用户运行的服务或程序就不能正常执行，会导致系统问题。 \\
+文件中每行代表一个用户，这些用户中的绝大多数是系统或服务正常运行所必需的用户，这种用户称为系统用户或伪用户。系统用户是不能登录系统的，但是这些用户同样也不能删除，因为一旦删除，依赖这些用户运行的服务或程序就不能正常执行，会导致系统问题。\\
 
 Linux系统中/etc/shadow文件保存了每个用户的信息，该文件只有root用户才能访问。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 cat /etc/shadow
 \end{lstlisting}
@@ -1536,6 +1526,7 @@ cat /etc/shadow
 使用root登录Linux之后就可以使用useradd命令添加普通用户，并通过passwd命令可以设置用户密码。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 useradd [username]
 passwd [username]
@@ -1546,6 +1537,7 @@ passwd [username]
 使用usermod命令可以修改用户信息。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 usermod -l [new_username] [old_username]
 \end{lstlisting}
@@ -1555,26 +1547,27 @@ usermod -l [new_username] [old_username]
 使用root登录Linux之后就可以使用userdel命令删除普通用户。
 
 \vspace{-0.5cm}
+
 \begin{lstlisting}
 userdel -rf [username]
 \end{lstlisting}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}                   \\
-			\hline
-			-f            & 表示force，强制删除用户         \\
-			\hline
-			-r            & 表示remove，删除主目录和邮件池  \\
-			\hline
-			-Z            & 为用户删除所有的SELinux用户映射 \\
-			\hline
-		\end{tabular}
-	}
-	\caption{userdel参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}                   \\
+            \hline
+            -f            & 表示force，强制删除用户         \\
+            \hline
+            -r            & 表示remove，删除主目录和邮件池  \\
+            \hline
+            -Z            & 为用户删除所有的SELinux用户映射 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{userdel参数说明}
 \end{table}
 
 \newpage
@@ -1586,41 +1579,41 @@ userdel -rf [username]
 有时候某些文件为了安全起见，只有只读权限，没有写入权限和执行权限，而这些权限一般和用户或用户组有关。通过ls -l命令可以查看文件权限相关信息。
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{img/C5/5-2/1.png}
+    \centering
+    \includegraphics[scale=0.7]{img/C5/5-2/1.png}
 \end{figure}
 
 \begin{itemize}
-	\item 第一列表示文件读取、写入、执行相关的权限
+    \item 第一列表示文件读取、写入、执行相关的权限
 
-	\item 第二列表示文件或目录的创建者/所有者
+    \item 第二列表示文件或目录的创建者/所有者
 
-	\item 第三列表示文件或目录所在的用户组
+    \item 第三列表示文件或目录所在的用户组
 \end{itemize}
 
-文件权限可分为三部分，第一部分表示文件创建者/所有者对该文件所具有的权限，第二部分表示创建者/所有者所在的组其他用户的权限，第三部分表示其他组的用户的权限。 \\
+文件权限可分为三部分，第一部分表示文件创建者/所有者对该文件所具有的权限，第二部分表示创建者/所有者所在的组其他用户的权限，第三部分表示其他组的用户的权限。
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{权限} & \textbf{描述}         \\
-			\hline
-			r             & 表示read，读取权限    \\
-			\hline
-			w             & 表示write，写入权限   \\
-			\hline
-			x             & 表示execute，执行权限 \\
-			\hline
-		\end{tabular}
-	}
-	\caption{文件权限}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{权限} & \textbf{描述}         \\
+            \hline
+            r             & 表示read，读取权限    \\
+            \hline
+            w             & 表示write，写入权限   \\
+            \hline
+            x             & 表示execute，执行权限 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{文件权限}
 \end{table}
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.7]{img/C5/5-2/2.png}
+    \centering
+    \includegraphics[scale=0.7]{img/C5/5-2/2.png}
 \end{figure}
 
 \subsection{chmod}
@@ -1628,41 +1621,41 @@ userdel -rf [username]
 chmod命令可以控制用户对文件的权限的命令。
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.6]{img/C5/5-2/3.png}
+    \centering
+    \includegraphics[scale=0.6]{img/C5/5-2/3.png}
 \end{figure}
 
 \begin{table}[H]
-	\centering
-	\setlength{\tabcolsep}{5mm}{
-		\begin{tabular}{|c|l|}
-			\hline
-			\textbf{参数} & \textbf{描述}            \\
-			\hline
-			u             & user用户                 \\
-			\hline
-			g             & group用户组              \\
-			\hline
-			o             & others其他用户           \\
-			\hline
-			a             & all全部                  \\
-			\hline
-			+             & 在现有权限基础上增加权限 \\
-			\hline
-			-             & 在现有权限基础上移出权限 \\
-			\hline
-			=             & 设置权限                 \\
-			\hline
-		\end{tabular}
-	}
-	\caption{chmod参数说明}
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|c|l|}
+            \hline
+            \textbf{参数} & \textbf{描述}            \\
+            \hline
+            u             & user用户                 \\
+            \hline
+            g             & group用户组              \\
+            \hline
+            o             & others其他用户           \\
+            \hline
+            a             & all全部                  \\
+            \hline
+            +             & 在现有权限基础上增加权限 \\
+            \hline
+            -             & 在现有权限基础上移出权限 \\
+            \hline
+            =             & 设置权限                 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{chmod参数说明}
 \end{table}
 
 chmod命令也可以使用八进制数来指定权限。文件或目录的权限位是由9个权限位来控制，每三位为一组。
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=0.8]{img/C5/5-2/4.png}
+    \centering
+    \includegraphics[scale=0.8]{img/C5/5-2/4.png}
 \end{figure}
 
 \end{document}
